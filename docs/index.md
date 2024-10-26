@@ -1,7 +1,7 @@
 ![image](readme-icons/image-header-1.png)  
 \[[GitHub Repo](https://github.com/cimug-org/utf13-site)\]
 
-# UCA Task Force 13 - CIM Model Comparison Reports
+# UCA TF13 - CIM Model Comparison Reports
 
 This site makes available online [cim-compare](https://cim-compare.ucaiug.io/) reports reflecting the ongoing work on the next release of the [Common Information Model](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)). Note that reports are published by the UTF13 CIM Model Management Team at the time an internal interim release is produced. Interim models are generally made publically available when a final stable release is published. Therefore, active participation is encouraged.
 
