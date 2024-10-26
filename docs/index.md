@@ -17,3 +17,6 @@ To be notified as new comparison reports become available please click on the [G
  IEC Publication | Publication Date | Baseline Model | Destination Model | Report Link | Comments
 -----------------|:----------------:|:--------------:|:-----------------:|:------------|:----------------- 
 [IEC 61970-301 Ed 7.1](https://webstore.iec.ch/en/publication/74467) | 22-Feb-2022 | CIM16v33 | CIM17v40 | [CIM16v33c > CIM17v40](https://utf13-reports.ucaiug.io/16v33c-17v40/comparison-report.html) | Comparison report of the UML differences between Ed 6.0 and Ed 7.1 of IEC 61970-301.
+
+### License
+Distributed under the Apache 2.0 license. See LICENSE for more information.
