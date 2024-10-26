@@ -10,6 +10,12 @@ To be notified as new comparison reports become available please click on the Gi
 
  Model Release Date | Release Version | Baseline Model Compared| Destination Model Compared | Comparison Report Link | Release Notes
 :------------------:|:---------------:|:----------------------:|:--------------------------:|:---------------------- |:-------------
+13-Feb-2024 | CIM18v00 | CIM17v40 | CIM18v00 | [CIM17v40 > CIM18v00](https://utf13-reports.ucaiug.io/17v40-18v00/comparison-report.html) | [Grid18v00_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/17v40-18v00/Grid18v00_ReleaseNotes.pdf)
+13-Feb-2024 | CIM18v00 | CIM17v40 | CIM18v00 | [CIM18v00 > CIM18v01](https://utf13-reports.ucaiug.io/18v00-18v01/comparison-report.html) | [Grid18v01_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/18v00-18v01/Grid18v01_ReleaseNotes.pdf)
+13-Feb-2024 | CIM18v00 | CIM17v40 | CIM18v00 | [CIM18v01 > CIM18v02](https://utf13-reports.ucaiug.io/18v01-18v02/comparison-report.html) | [Grid18v02_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/18v01-18v02/Grid18v00_ReleaseNotes.pdf)
+13-Feb-2024 | CIM18v00 | CIM17v40 | CIM18v00 | [CIM18v02 > CIM18v03](https://utf13-reports.ucaiug.io/18v02-18v03/comparison-report.html) | [Grid18v03_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/18v02-18v03/Grid18v01_ReleaseNotes.pdf)
+13-Feb-2024 | CIM18v00 | CIM17v40 | CIM18v00 | [CIM17v40 > CIM18v00](https://utf13-reports.ucaiug.io/17v40-18v00/comparison-report.html) | [Grid18v10_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/17v40-18v00/Grid18v00_ReleaseNotes.pdf)
+13-Feb-2024 | CIM18v00 | CIM17v40 | CIM18v00 | [CIM18v00 > CIM18v01](https://utf13-reports.ucaiug.io/18v00-18v01/comparison-report.html) | [Grid18v10_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/18v00-18v01/Grid18v01_ReleaseNotes.pdf)
 13-Feb-2024 | CIM18v10 | CIM18v09 | CIM18v10 | [CIM18v09 > CIM18v10](https://utf13-reports.ucaiug.io/18v09-18v10/comparison-report.html) | [Grid18v10_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/18v09-18v10/Grid18v10_ReleaseNotes.pdf)
 
 ### Historical Reports for IEC 61970-301 International Standards
