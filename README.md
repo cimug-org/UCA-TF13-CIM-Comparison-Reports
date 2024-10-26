@@ -3,7 +3,9 @@
 
 # UCA Task Force 13 - CIM Model Comparison Reports
 
-This site makes available online [cim-compare](https://cim-compare.ucaiug.io/) comparison reports reflecting the ongoing work on the next release of the [Common Information Model](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)). To be notified as new comparison reports as they become available please click on the [GitHub Repo] link above and subscribe as a watcher to the repository. Note that reports are published by the UTF13 CIM Model Management Team at the time an internal interim release is produced. For further information on the . 
+This site makes available online [cim-compare](https://cim-compare.ucaiug.io/) reports reflecting the ongoing work on the next release of the [Common Information Model](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)). Note that reports are published by the UTF13 CIM Model Management Team at the time an internal interim release is produced. Interim models are generally made publically available when a final stable release is published. Therefore, active participation is encouraged.
+
+To be notified as new comparison reports become available please click on the [GitHub Repo] link above and subscribe as a watcher to the repository. 
 
 ## Latest CIM18 Interim Releases of Work In Progress
 
@@ -13,7 +15,7 @@ This site makes available online [cim-compare](https://cim-compare.ucaiug.io/) c
 28-Nov-2023 | CIM18v12 | CIM18v11 | CIM18v12 | [CIM18v11 > CIM18v12](https://utf13-site.ucaiug.io/example-comparison-report/comparison-report.html)
 13-Feb-2024 | CIM18v13 | CIM18v12 | CIM18v13 | [CIM18v12 > CIM18v13](https://utf13-site.ucaiug.io/example-comparison-report/comparison-report.html)
 
-## Historical Reports between IEC 61970-301 IS Publications
+## Historical Reports for IEC 61970-301 International Standards
 
  IEC Publication | Publication Date | Baseline Model | Destination Model | Report Link | Comments
 -----------------|:----------------:|:--------------:|:-----------------:|:------------|:----------------- 
