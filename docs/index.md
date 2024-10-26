@@ -4,9 +4,9 @@
 
 This site makes available online [cim-compare](https://cim-compare.ucaiug.io/) reports reflecting the ongoing work on the next release of the [Common Information Model](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)). Note that reports are published by the UTF13 CIM Model Management Team at the time an internal interim release is produced. Interim models are generally not made publically available to non-participants until the final stable release is published. Therefore, active participation is encouraged.
 
-To be notified as new comparison reports become available please click on the [GitHub Repo] link above and subscribe as a watcher to the repository. 
+To be notified as new comparison reports become available please click on the GitHub Repo link above and subscribe as a watcher to the repository.
 
-### Latest Reports for CIM18 Interim Releases of Work In Progress
+### Latest Reports for CIM18 Interim Working Releases of Work In Progress
 
  Model Release Date | Release Version | Baseline Model Compared| Destination Model Compared | Comparison Report Link | Release Notes
 :------------------:|:---------------:|:----------------------:|:--------------------------:|:---------------------- |:-------------
