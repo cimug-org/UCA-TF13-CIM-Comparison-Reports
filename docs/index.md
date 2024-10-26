@@ -9,9 +9,7 @@ To be notified as new comparison reports become available please click on the [G
 
  Model Release Date | Release Version | Baseline Model Compared| Destination Model Compared | Comparison Report Link
 :------------------:|:---------------:|:----------------------:|:--------------------------:|:-----------
-24-Oct-2021 | CIM18v11 | CIM18v10 | CIM18v11 | [CIM18v10 > CIM18v11](https://utf13-site.ucaiug.io/example-comparison-report/comparison-report.html)
-28-Nov-2023 | CIM18v12 | CIM18v11 | CIM18v12 | [CIM18v11 > CIM18v12](https://utf13-site.ucaiug.io/example-comparison-report/comparison-report.html)
-13-Feb-2024 | CIM18v13 | CIM18v12 | CIM18v13 | [CIM18v12 > CIM18v13](https://utf13-site.ucaiug.io/example-comparison-report/comparison-report.html)
+13-Feb-2024 | CIM18v10 | CIM18v09 | CIM18v10 | [CIM18v09 > CIM18v10](https://utf13-site.ucaiug.io/18v09-18v10/comparison-report.html)
 
 ### Historical Reports for IEC 61970-301 International Standards
 
