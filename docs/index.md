@@ -8,9 +8,9 @@ To be notified as new comparison reports become available please click on the [G
 
 ### Latest Reports for CIM18 Interim Releases of Work In Progress
 
- Model Release Date | Release Version | Baseline Model Compared| Destination Model Compared | Comparison Report Link
-:------------------:|:---------------:|:----------------------:|:--------------------------:|:----------------------
-13-Feb-2024 | CIM18v10 | CIM18v09 | CIM18v10 | [CIM18v09 > CIM18v10](https://utf13-reports.ucaiug.io/18v09-18v10/comparison-report.html)
+ Model Release Date | Release Version | Baseline Model Compared| Destination Model Compared | Comparison Report Link | Release Notes
+:------------------:|:---------------:|:----------------------:|:--------------------------:|:---------------------- |:-------------
+13-Feb-2024 | CIM18v10 | CIM18v09 | CIM18v10 | [CIM18v09 > CIM18v10](https://utf13-reports.ucaiug.io/18v09-18v10/comparison-report.html) | [Grid18v10_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/18v09-18v10/Grid18v10_ReleaseNotes.pdf)
 
 ### Historical Reports for IEC 61970-301 International Standards
 
