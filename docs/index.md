@@ -15,7 +15,7 @@ To be notified as new comparison reports become available please click on the Gi
 ### Latest Aggregate Report for CIM18 for All Changes to Date
  Model Release Date | Release Version | Baseline Model Compared| Destination Model Compared | Comparison Report Link | Release Notes
 :------------------:|:---------------:|:----------------------:|:--------------------------:|:---------------------- |:-------------
-23-Oct-2024</span> | CIM18v13 | CIM17v40 | CIM18v13 | [CIM17v40 > CIM18v13](https://utf13-reports.ucaiug.io/17v40-18v13/comparison-report.html){:target="_blank"} | [CIM18v13_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/17v40-18v13/CIM18v13_ReleaseNotes.pdf){:target="_blank"}
+23-Oct-2024 | CIM18v13 | CIM17v40 | CIM18v13 | [CIM17v40 > CIM18v13](https://utf13-reports.ucaiug.io/17v40-18v13/comparison-report.html){:target="_blank"} | [CIM18v13_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/17v40-18v13/CIM18v13_ReleaseNotes.pdf){:target="_blank"}
 
 ### Reports for CIM18 Interim Working Releases of Work In Progress
 
