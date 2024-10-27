@@ -16,6 +16,7 @@ To be notified as new comparison reports become available please click on the Gi
 
  Model Release Date | Release Version | Baseline Model Compared| Destination Model Compared | Comparison Report Link | Release Notes
 :------------------:|:---------------:|:----------------------:|:--------------------------:|:---------------------- |:-------------
+23-Oct-2024 | CIM18v13 | CIM17v40 | CIM18v13 | [CIM17v40 > CIM18v13](https://utf13-reports.ucaiug.io/17v40-18v13/comparison-report.html){:target="_blank"} | [CIM18v13_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/17v40-18v13/CIM18v13_ReleaseNotes.pdf){:target="_blank"}
 23-Oct-2024 | CIM18v13 | CIM18v12 | CIM18v13 | [CIM18v12 > CIM18v13](https://utf13-reports.ucaiug.io/18v12-18v13/comparison-report.html){:target="_blank"} | [CIM18v13_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/18v12-18v13/CIM18v13_ReleaseNotes.pdf){:target="_blank"}
 13-Sep-2024 | CIM18v12 | CIM18v11 | CIM18v12 | [CIM18v11 > CIM18v12](https://utf13-reports.ucaiug.io/18v11-18v12/comparison-report.html){:target="_blank"} | [CIM18v12_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/18v11-18v12/CIM18v12_ReleaseNotes.pdf){:target="_blank"}
 05-Jun-2024 | CIM18v11 | CIM18v10 | CIM18v11 | [CIM18v10 > CIM18v11](https://utf13-reports.ucaiug.io/18v10-18v11/comparison-report.html){:target="_blank"} | [CIM18v11_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/18v10-18v11/CIM18v11_ReleaseNotes.pdf){:target="_blank"}
