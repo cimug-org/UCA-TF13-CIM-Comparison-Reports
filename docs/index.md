@@ -18,7 +18,7 @@ To be notified as new comparison reports become available please click on the Gi
 :------------------:|:---------------:|:----------------------:|:--------------------------:|:----------- |:-------------
 23-Oct-2024 | CIM18v13 | CIM17v40 | CIM18v13 | [CIM17v40 > CIM18v13](https://utf13-reports.ucaiug.io/17v40-18v13/comparison-report.zip){:target="_blank"}<sup>*</sup> | [CIM18v13_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/17v40-18v13/CIM18v13_ReleaseNotes.pdf){:target="_blank"}
 
-<sup>*</sup> NOTE: The link to this report references a `.zip` file as the size of the report exceeds GitHub repository restrictions. You may download and view the report offline in your local browser.
+<sup>*</sup> NOTE: The link to this report references a `.zip` file as the size of the report exceeds GitHub repository maximum size restrictions. You may download and view the report offline in your local browser.
 
 ### Reports for CIM18 Interim Releases of Work In Progress
 
@@ -39,7 +39,7 @@ To be notified as new comparison reports become available please click on the Gi
 09-Jun-2022 | CIM18v01 | CIM18v00 | CIM18v01 | [CIM18v00 > CIM18v01](https://utf13-reports.ucaiug.io/18v00-18v01/comparison-report.html){:target="_blank"} | [CIM18v01_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/18v00-18v01/CIM18v01_ReleaseNotes.pdf){:target="_blank"}
 07-Oct-2021 | CIM18v00 | CIM17v40 | CIM18v00 | [CIM17v40 > CIM18v00](https://utf13-reports.ucaiug.io/17v40-18v00/comparison-report.html){:target="_blank"} | [CIM18v00_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/17v40-18v00/CIM18v00_ReleaseNotes.pdf){:target="_blank"}
 
-<sup>*</sup> NOTE: The link to these reports references `.zip` files as the size of the reports exceeds GitHub repository restrictions. You may download and view the reports offline in your local browser.
+<sup>*</sup> NOTE: The link to these reports references `.zip` files as the size of the reports exceeds GitHub repository maximum size restrictions. You may download and view the reports offline in your local browser.
 
 ### License
 Distributed under the Apache 2.0 license. See LICENSE for more information.
