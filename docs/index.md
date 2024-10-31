@@ -10,7 +10,7 @@ To be notified as new comparison reports become available please click on the Gi
 
  IEC Publication | Publication Date | Baseline Model | Destination Model | Report Link | Comments
 -----------------|:----------------:|:--------------:|:-----------------:|:------------|:----------------- 
-[IEC61970-301:2020+AMD1:2022](https://webstore.iec.ch/en/publication/74467){:target="_blank"} | 22-Feb-2022 | CIM16v33 | CIM17v40 | [CIM16v33c > CIM17v40](https://utf13-reports.ucaiug.io/16v33c-17v40/comparison-report.html){:target="_blank"} | Comparison report of the UML differences between Ed 6.0 and Ed 7.1 of IEC 61970-301.
+[IEC61970-301:2020+AMD1:2022](https://webstore.iec.ch/en/publication/74467){:target="_blank"} | 22-Feb-2022 | CIM16v33 | CIM17v40 | [CIM16v33c > CIM17v40](https://utf13-reports.ucaiug.io/16v33c-17v40/comparison-report.html){:target="_blank"} | Comparison report of the UML differences between Ed 6.0 (based on CIM16v33) and Ed 7.1 (based on CIM17v40) of IEC 61970-301.
 
 ## Latest Aggregate Report for CIM18 for All Changes to Date
 
