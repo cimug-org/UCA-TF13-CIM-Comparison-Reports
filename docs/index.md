@@ -4,7 +4,12 @@
 
 This site makes available online [cim-compare](https://cim-compare.ucaiug.io/) reports reflecting the ongoing work on the next release of the [Common Information Model](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)). Note that reports are published by the UTF13 CIM Model Management Team at the time an internal working release is produced. Interim models are generally not made publically available to non-participants until the final stable release is published. Therefore, active participation is encouraged.
 
-To be notified as new comparison reports become available please click on the GitHub Repo link above and subscribe as a watcher to the repository.
+To be notified as new comparison reports become available please click on the GitHub Repo link above and subscribe as a watcher via the custom settings shown in the set to screenshots below:
+
+![image](https://github.com/user-attachments/assets/d5f0958b-80b5-48c8-b125-50b4ae3281a8)
+
+![image](https://github.com/user-attachments/assets/b87c8dde-d278-4fb2-ad9f-6324b4f067d6)
+
 
 ## Historical Reports for IEC 61970-301 International Standards
 
