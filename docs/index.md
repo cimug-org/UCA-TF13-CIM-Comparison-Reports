@@ -6,9 +6,12 @@ This site makes available online [cim-compare](https://cim-compare.ucaiug.io/) r
 
 To be notified as new comparison reports become available please click on the GitHub Repo link above and subscribe as a watcher via:
 
+https://github.com/user-attachments/assets/d09b56d2-0b9c-4ec5-9a91-257167ef1d7e
+
+
 Step 1: Select Watch and then Custom | Step 2: Then check 'Discussions' and click 'Apply'
 ---------|---------
-[![image](https://github.com/user-attachments/assets/d5f0958b-80b5-48c8-b125-50b4ae3281a8)](https://github.com/user-attachments/assets/d5f0958b-80b5-48c8-b125-50b4ae3281a8) | [![image](https://github.com/user-attachments/assets/b87c8dde-d278-4fb2-ad9f-6324b4f067d6)](https://github.com/user-attachments/assets/b87c8dde-d278-4fb2-ad9f-6324b4f067d6)
+[![image](https://github.com/user-attachments/assets/d5f0958b-80b5-48c8-b125-50b4ae3281a8)](https://github.com/user-attachments/assets/d5f0958b-80b5-48c8-b125-50b4ae3281a8) | [![image](https://github.com/user-attachments/assets/d09b56d2-0b9c-4ec5-9a91-257167ef1d7e)](https://github.com/user-attachments/assets/d09b56d2-0b9c-4ec5-9a91-257167ef1d7e)
 
 ## Historical Reports for IEC 61970-301 International Standards
 
