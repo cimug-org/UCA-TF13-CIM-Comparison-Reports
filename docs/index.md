@@ -11,7 +11,7 @@ This site makes available online [cim-compare](https://cim-compare.ucaiug.io/) r
 
 <br/>
 
-To be notified as new comparison reports become available please click on the GitHub Repo link above and subscribe as a watcher via:
+To be notified as new releases and comparison reports become available please click on the GitHub Repo link above and subscribe as a watcher via:
 
 Step 1: Select Watch and then Custom | Step 2: Then check 'Discussions' and click 'Apply'
 ---------|---------
