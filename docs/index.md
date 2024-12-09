@@ -20,7 +20,7 @@ Step 1: Select Watch and then Custom | Step 2: Then check 'Discussions' and clic
 
  Model Release Date | Release Version | Baseline Model Compared| Destination Model Compared | Report Link | Release Notes
 :------------------:|:---------------:|:----------------------:|:--------------------------:|:----------- |:-------------
-23-Oct-2024 | CIM18v13 | CIM17v40 | CIM18v13 | [CIM17v40 > CIM18v13](https://utf13-reports.ucaiug.io/17v40-18v13/comparison-report.zip){:target="_blank"}<sup>1</sup> | [CIM18v13_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/17v40-18v13/CIM18v13_ReleaseNotes.pdf){:target="_blank"}
+05-Dec-2024 | CIM18v14 | CIM17v40 | CIM18v14 | [CIM17v40 > CIM18v14](https://utf13-reports.ucaiug.io/17v40-18v14/comparison-report.zip){:target="_blank"}<sup>1</sup> | [CIM18v14_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/17v40-18v14/CIM18v14_ReleaseNotes.pdf){:target="_blank"}
 
 <sup>1</sup> The link to this report references a `.zip` file as the size of the report exceeds GitHub repository maximum size restrictions. You may download and view the report offline in your local browser.
 
@@ -28,6 +28,7 @@ Step 1: Select Watch and then Custom | Step 2: Then check 'Discussions' and clic
 
  Model Release Date | Release Version | Baseline Model Compared| Destination Model Compared | Report Link | Release Notes
 :------------------:|:---------------:|:----------------------:|:--------------------------:|:----------- |:-------------
+05-Dec-2024 | CIM18v14 | CIM18v13 | CIM18v14 | [CIM18v13 > CIM18v14](https://utf13-reports.ucaiug.io/18v13-18v14/comparison-report.html){:target="_blank"} | [CIM18v14_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/18v13-18v14/CIM18v14_ReleaseNotes.pdf){:target="_blank"}
 23-Oct-2024 | CIM18v13 | CIM18v12 | CIM18v13 | [CIM18v12 > CIM18v13](https://utf13-reports.ucaiug.io/18v12-18v13/comparison-report.html){:target="_blank"} | [CIM18v13_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/18v12-18v13/CIM18v13_ReleaseNotes.pdf){:target="_blank"}
 13-Sep-2024 | CIM18v12 | CIM18v11 | CIM18v12 | [CIM18v11 > CIM18v12](https://utf13-reports.ucaiug.io/18v11-18v12/comparison-report.html){:target="_blank"} | [CIM18v12_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/18v11-18v12/CIM18v12_ReleaseNotes.pdf){:target="_blank"}
 05-Jun-2024 | CIM18v11 | CIM18v10 | CIM18v11 | [CIM18v10 > CIM18v11](https://utf13-reports.ucaiug.io/18v10-18v11/comparison-report.html){:target="_blank"} | [CIM18v11_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/18v10-18v11/CIM18v11_ReleaseNotes.pdf){:target="_blank"}
