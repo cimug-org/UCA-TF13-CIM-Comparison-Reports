@@ -4,6 +4,13 @@
 
 This site makes available online [cim-compare](https://cim-compare.ucaiug.io/) reports reflecting the ongoing work on the next release of the [Common Information Model](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)). Note that reports are published by the UTF13 CIM Model Management Team at the time an internal working release is produced. Interim models are generally not made publically available to non-participants until the final stable release is published. Therefore, active participation is encouraged.
 
+<a href="http://iectc57.ucaiug.org/WG13/Shared%20Documents/61970%20Work%20in%20progress;%20models,%20documents%20and%20issues/CIM18/Canonical%20Models/CIM_Grid18v14_Enterprise14v00_Market04v14.zip" style="display: inline-flex; align-items: center; text-decoration: none;">
+    <img src="readme-icons/earose.png" alt="Latest CIM18 release" width="30" height="30" style="margin-right: 8px;"/> 
+    <span>For those with appropriate permissions the latest CIM18 release is here.</span>
+</a>
+
+<br/>
+
 To be notified as new comparison reports become available please click on the GitHub Repo link above and subscribe as a watcher via:
 
 Step 1: Select Watch and then Custom | Step 2: Then check 'Discussions' and click 'Apply'
