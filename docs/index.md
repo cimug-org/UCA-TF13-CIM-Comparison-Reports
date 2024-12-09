@@ -8,7 +8,6 @@ This site makes available online [cim-compare](https://cim-compare.ucaiug.io/) r
     <img src="readme-icons/earose.png" alt="Latest CIM18 release" width="30" height="30" style="margin-right: 8px;"/> 
     <span>For those with appropriate permissions the latest CIM18 release is here.</span>
 </a>
-
 <br/>
 
 To be notified as new releases and comparison reports become available please click on the GitHub Repo link above and subscribe as a watcher via:
