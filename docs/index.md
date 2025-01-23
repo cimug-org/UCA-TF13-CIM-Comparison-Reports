@@ -26,7 +26,7 @@ Step 1: Select Watch and then Custom | Step 2: Then check 'Discussions' and clic
 
  Model Release Date | Release Version | Baseline Model Compared| Destination Model Compared | Report Link | Release Notes
 :------------------:|:---------------:|:----------------------:|:--------------------------:|:----------- |:-------------
-05-Dec-2024 | CIM18v14 | CIM17v40 | CIM18v14 | CIM17v40 > CIM18v14<sup>1</sup> | CIM18v14_ReleaseNotes.pdf
+22-Jan-2025 | CIM18v15 | CIM17v40 | CIM18v15 | CIM17v40 > CIM18v15<sup>1</sup> | [CIM18v15_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/17v40-18v15/CIM18v15_ReleaseNotes.pdf){:target="_blank"}
 
 <sup>1</sup> The link to this report references a `.zip` file as the size of the report exceeds GitHub repository maximum size restrictions. You may download and view the report offline in your local browser.
 
