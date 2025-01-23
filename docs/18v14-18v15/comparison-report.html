@@ -1,0 +1,1091 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>CIM Model Comparison Report</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <style type="text/css">
+                 	/* typography: fonts */
+                    body { 
+                        font-size: 12px; 
+                        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                        /* font-family: arial, sans-serif; */
+                    }
+
+                    /* styles needed when comparing notes and description changes */                    
+					.added {
+						background-color: #d4f8d4; /* Light green for added text */
+						color: green;
+					}
+					.removed {
+						background-color: #f8d4d4; /* Light red for removed text */
+						color: red;
+						text-decoration: line-through;
+					}
+                    
+                    /* ================================================ */
+                    /* START::SEARCH NAVBAR */
+                    /* ================================================ */
+                    
+                    * {
+                      box-sizing: border-box;
+                    }
+                    
+                    .topnav {
+                      overflow: hidden;
+                      /*background-color: #e9e9e9;*/
+                      background-color: #AED6F1;
+                    }
+                    
+                    .topnav .title-container {
+                      float: left;
+                      margin-top: 14px;
+                      margin-left: 14px;
+                    }
+                    
+                    .topnav .button-container {
+                      float: right;
+                    }
+                    
+                    .topnav .search-container {
+                      float: right;
+                    }
+                    
+                    .topnav input[type="text"] {
+                      padding: 3px;
+                      margin-top: 10px;
+                      font-size: 14px;
+                      /* border: darkgray 1px solid; */
+                    }
+                    
+                    .topnav .search-container a {
+                      float: right;
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                      margin-right: 14px;
+                      background: #ccc;
+                      font-size: 16px;
+                      border: none;
+                      cursor: pointer;
+                      padding: 4px 4px;
+                      text-align: center;
+                      border: darkgray 1px solid;
+                    }
+                    
+                    /* unvisited link */
+                    .topnav .search-container a:link {
+                      color: black;
+                    }
+                    
+                    /* visited link */
+                    .topnav .search-container a:visited {
+                      color: black;
+                    }
+                    
+                    /* mouse over link */
+                    .topnav .search-container a:hover {
+                      background: darkgray;
+                      color: black;
+                    }
+                    
+                    /* selected link */
+                    .topnav .search-container a:active {
+                      color: black;
+                    }
+                    
+                    /* Expand / Collapse buttons */
+                    .topnav .button-container button {
+                      float: right;
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                      margin-right: 14px;
+                      background: #ccc;
+                      font-size: 16px;
+                      border: none;
+                      cursor: pointer;
+                      padding: 4px 4px;
+                      text-align: center;
+                      border: darkgray 1px solid;
+                    }   
+                    
+                    .topnav .search-container button:hover {
+                      background: darkgray;
+                    }                 
+                    @media screen and (max-width: 600px) {
+                      .topnav .search-container {
+                        float: none;
+                      }
+                    
+                      .topnav a,
+                      .topnav input[type="text"],
+                      .topnav .search-container button {
+                        float: none;
+                        display: block;
+                        text-align: left;
+                        width: 100%;
+                        margin: 0;
+                        padding: 14px;
+                      }
+                    
+                      .topnav input[type="text"] {
+                        border: 1px solid darkgray;
+                      }
+                    }
+                    
+                    /* ================================================ */
+                    /* END::SEARCH NAVBAR */
+                    /* ================================================ */
+  
+                    /* ================================================ */
+                    /* START::DIAGRAMS */
+                    /* ================================================ */
+                    
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                        display: block; /* remove extra space below image */
+                    }  
+                    
+                    .diagram-box {
+                        width: 100%;   
+                        height: 100%;    
+                        display: block; 
+                        align-items: center;
+                    }                   
+                    
+                    /* ================================================ */
+                    /* END::DIAGRAMS */
+                    /* ================================================ */                    
+                                        
+                    /* ================================================ */
+                    /* START::TABLES */
+                    /* ================================================ */
+
+                    #properties {
+                        /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+                        font-size: 12px;
+                        border-collapse:
+                        collapse;
+                        width: 100%;
+                    }
+
+                    #properties td, #properties th {
+                        border: 1px solid #ddd;
+                        padding: 2px;
+                    }
+
+                    #properties tr:nth-child(even){
+                        background-color: #f2f2f2;
+                    }
+
+                    #properties tr:hover {
+                        background-color: #ddd;
+                    }
+
+                    #properties th {
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                        text-align: left;
+                        background-color: white;
+                        /* color: white; */
+                    }
+                    
+                    #attributes {
+                        /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+                        font-size: 12px;
+                        border-collapse:
+                        collapse;
+                        width: 100%;
+                    }
+
+                    #attributes td, #attributes th {
+                        valign: top;
+                        border: 1px solid #ddd;
+                        padding: 2px;
+                    }
+                    
+                    #attributes td {
+                        valign: top;
+                    }
+                    
+                    #attributes tr {
+                        valign: top;
+                    }
+
+                    #attributes tr:hover {
+                        background-color: #ddd;
+                    }
+
+                    #attributes th {
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                        text-align: left;
+                        background-color:lightgray;
+                    }
+
+                    /* ================================================ */
+                    /* END::TABLES */
+                    /* ================================================ */
+
+                    /* ================================================ */
+                    /* START::COLLAPSIBLE */
+                    /* ================================================ */
+                    
+                    .wrap-collapsible {
+                        margin-bottom: 1.2rem 0;
+                    }
+
+                    input[type='checkbox'] {
+                        display: none;
+                    }
+
+                    .lbl-toggle {
+                        display: block;
+
+                        font-family: monospace;
+                        font-size: 1.1rem;
+                        text-align: left;
+                        padding: .3rem;
+                        color: black;
+                        cursor: pointer;
+                        border-radius: 7px;
+                        transition: all 0.25s
+                        ease-out;
+                    }
+
+                    .lbl-toggle:hover {
+                        font-weight: bold;
+                    }
+
+                    .lbl-toggle::before {
+                        content: ' ';
+                        display: inline-block;
+    
+                        border-top: 5px solid transparent;
+                        border-bottom: 5px solid transparent;
+                        border-left: 5px solid currentColor;
+                        vertical-align: middle;
+                        margin-right: .7rem;
+                        transform: translateY(-2px);
+    
+                        transition: transform .2s ease-out;
+                    }
+
+                    .toggle:checked + .lbl-toggle::before {
+                        transform: rotate(90deg) translateX(-3px);
+                    }
+
+                    .collapsible-content {
+                        max-height: 0px;
+                        overflow: hidden;
+                        transition: max-height .25s ease-in-out;
+                    }
+
+                    .toggle:checked + .lbl-toggle + .collapsible-content {
+                        max-height: 5000000px;
+                    }
+
+                    .toggle:checked + .lbl-toggle {
+                        border-bottom-right-radius: 0;
+                        border-bottom-left-radius: 0;
+                    }
+                    
+                    .lbl-home-icon {
+                      float: right;
+                      margin-right: 5px;
+                    } 
+
+                    .collapsible-content .content-inner {
+                        /* background: white; */
+                        border-bottom: 1px solid lightgray;
+                        border-bottom-left-radius: 7px;
+                        border-bottom-right-radius: 7px;
+                        padding: .5rem 1.25rem;
+                        padding-bottom: 1.5rem;
+                    }
+
+                    /* ================================================ */
+                    /*  END::COLLAPSIBLE */
+                    /* ================================================ */
+                    
+                    /* ================================================ */
+                    /* START::TOOLTIPS */
+                    /* ================================================ */
+                    
+                    /* Tooltip container */
+                    .tooltip {
+                      position: relative;
+                      display: inline-block;
+                      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                    }
+                    
+                    /* Tooltip text */
+                    .tooltip .tooltiptext {
+                      top: 10px;
+                      left: 125%;
+                      visibility: hidden;
+                      width: 350px;
+                      max-width: 650px;
+                      font-size: 12px;
+                      font-weight: normal;
+                      background-color: lightyellow;
+                      color: black;
+                      text-align: left;
+                      border: 1px;
+                      border-radius: 4px;
+                      border-style: solid;
+                      border-color: darkgray;
+                      padding: 10px 10px;
+                    
+                      /* Position the tooltip */
+                      position: absolute;
+                      z-index: 1;
+                    }
+                    
+                    /* Show the tooltip text when you mouse over the tooltip container */
+                    .tooltip:hover .tooltiptext {
+                      visibility: visible;
+                      font-weight: normal;
+                    }
+                    
+                    /* ATTRIBUTE Tooltip container */
+                    .attribute-tooltip {
+                      position: relative;
+                      display: inline-block;
+                      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                    }
+                    
+                    /* ATTRIBUTE Tooltip text */
+                    .attribute-tooltip .attribute-tooltiptext {
+                      top: 10px;
+                      left: 125%;
+                      visibility: hidden;
+                      width: 400px;
+                      max-width: 650px;
+                      font-size: 12px;
+                      font-weight: normal;
+                      background-color: white;
+                      color: black;
+                      text-align: left;
+                      border: 1px;
+                      border-radius: 4px;
+                      border-style: solid;
+                      border-color: darkgray;
+                      padding: 5px 5px;
+                    
+                      /* Position the tooltip */
+                      position: absolute;
+                      z-index: 1;
+                    }
+                    
+                    /* Show the tooltip ATTRIBUTE table when you mouse over the tooltip container */
+                    .attribute-tooltip:hover .attribute-tooltiptext {
+                      visibility: visible;
+                      font-weight: normal;
+                    }
+                    /* ================================================ */
+                    /*  END::TOOLTIPS */
+                    /* ================================================ */
+                    
+                    /* ================================================ */
+                    /* START::MISC */
+                    /* ================================================ */
+
+                    .name, .type, .cardinality, .namespace { 
+                        font-family: courier, monospace; 
+                    }
+                    
+                    /* unvisited link */
+                    .class-link:link {
+                      color: black;
+                      text-decoration: none;
+                    }
+                    
+                    /* visited link */
+                    .class-link:visited {
+                      color: black;
+                      text-decoration: none;
+                    }
+                    
+                    /* mouse over link */
+                    .class-link:hover {
+                      font-weight: bold;
+                      color: black;
+                      text-decoration: none;
+                    }
+                    
+                    /* selected link */
+                    .class-link:active {
+                      color: black;
+                      text-decoration: none;
+                    }  
+                    
+	                /* borders */
+                    div.group {
+                        border-style: solid;
+                        border-color: gray;
+                        border-width: 1px; 
+                        padding: 0.5rem 0.5rem;
+                    }
+                    
+                    /* model-only is GREEN */
+                    p.model-only { 
+                        background-color: #ABEBC6; color: black;
+                    }
+                    
+                    /* baseline-only is RED */
+                    p.baseline-only { 
+                        background-color: #F5B7B1; color: black; 
+                    }
+                    
+                    /* identical */
+                    p.identical { 
+                        background-color: #EBDEF0; color: black; 
+                    }
+                    
+                    /* moved is YELLOW */
+                    p.moved { 
+                        background-color: #F9E79F; color: black; 
+                    }
+                    
+                    /* changed is BLUE */
+                    p.changed { 
+                        background-color: #D6EAF8; color: black; 
+                    }
+                    
+                    /* model-only is GREEN */
+                    tr.model-only { 
+                        background-color: #ABEBC6;
+                    }
+                    
+                    /* baseline-only is RED */
+                    tr.baseline-only { 
+                        background-color: #F5B7B1; 
+                    }
+                    
+                    /* identical is GREEN */
+                    tr.identical { 
+                        background-color: #EBDEF0; color: black; 
+                    }
+                    
+                    /* moved is YELLOW */
+                    tr.moved { 
+                        background-color: #F9E79F; 
+                    }
+                    
+                    /* changed is BLUE */
+                    tr.changed { 
+                        background-color: #D6EAF8; 
+                    }
+                    
+                    /* ================================================ */
+                    /* END::MISC */
+                    /* ================================================ */
+                    
+                    .highlighted {
+                        background-color: #39ff14;
+                    }
+                    
+                </style>
+    </head>
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/7.0.0/diff.min.js"></script><script>
+                    function executeSearch() {
+                        var searchLink = document.getElementById('search-link');
+                        var searchClassField = document.getElementById('search-class-field');
+                        
+                        var className = searchClassField.value;
+                        if (className != null && className != '') {
+                            var classHeader = document.getElementsByName(className)[0];
+                            if (classHeader != null) {
+                                var classNameId = classHeader.getAttribute('classNameId');
+                                searchLink.href = '#' + classNameId; 
+                                autoExpand(classNameId);
+                                
+                                setTimeout(
+                                    function() { 
+                                        classHeader.scrollIntoView(); 
+                                    }, 3000);
+                                    
+                                return true;
+                            } else {
+                                alert("No class named '" + className + "' exists in this comparison report.\nNote that class searches are case sensitive. Please try again.");
+                            } 
+                        }
+                        return false;
+                    }
+    
+                    function toggleHeaders(expand) {
+                      var currentInputField;
+                      var inputFields = document.getElementsByTagName("INPUT");
+                      for(var i = 0; i < inputFields.length; i++) {
+                          currentInputField = inputFields[i];
+                          if (currentInputField && currentInputField.type.toLowerCase() == 'checkbox' && currentInputField.id.startsWith("collapsible-")) {
+                            currentInputField.checked = expand;
+                            var packageNameId = currentInputField.getAttribute('packageNameId');
+                            if (packageNameId != null && packageNameId != '') {
+                                var packageIcon = document.getElementById("package-icon-" + packageNameId);
+                                if (packageIcon != null) {
+                                    if (expand) {
+                                        packageIcon.className = "fas fa-folder-open";
+                                    } else {
+                                        packageIcon.className = "fas fa-folder";
+                                    }
+                                }
+                            }
+                          }
+                      }
+                      return true;
+                    }
+                    
+                    function togglePackageHeaderIcon(currentPackageHeader) {
+                        var packageNameId = currentPackageHeader.getAttribute('packageNameId');
+                        if (packageNameId != null && packageNameId != '') {
+                            var packageIcon = document.getElementById("package-icon-" + packageNameId);
+                            if (packageIcon != null) {
+                                if (currentPackageHeader.checked) {
+                                    packageIcon.className = "fas fa-folder-open";
+                                } else {
+                                    packageIcon.className = "fas fa-folder";
+                                }
+                            }
+                        }
+                        return true;
+                    }
+                                
+                    //
+                    // Original JavaScript code by Chirp Internet: www.chirp.com.au
+                    // Please acknowledge use of this code by including this header.
+                    //
+                    window.addEventListener("DOMContentLoaded", function(e) {
+                    
+                      var links = document.getElementsByTagName("A");
+                      for(var i=0; i < links.length; i++) {
+                        if(!links[i].hash) continue;
+                        if(links[i].origin + links[i].pathname != self.location.href) continue;
+                        (function(anchorPoint) {
+                          links[i].addEventListener("click", function(e) {
+                            autoExpand(links[i].hash.replace(/#/, ""));
+                            anchorPoint.scrollIntoView(true);
+                            e.preventDefault();
+                          }, false);
+                        })(document.getElementById(links[i].hash.replace(/#/, "")));
+                      }
+                    }, false);
+                                   
+                    function autoExpand(classId) {
+                      var radioButton = document.getElementById("collapsible-" + classId);
+                      if (radioButton != null) {
+                        radioButton.checked = true;
+                        autoExpand(radioButton.getAttribute('parentCollapsibleId'));
+                      }
+                    }
+                    
+                	document.addEventListener("DOMContentLoaded", () => {
+					const attributeTables = document.querySelectorAll("table#attributes");
+
+					attributeTables.forEach(attributeTable => {
+						// Find the second row in the attribute table
+						const attributeRows = attributeTable.querySelectorAll("tr");
+						if (attributeRows) {
+							attributeRows.forEach(attributeRow => {
+								// Extract cells for Baseline and Destination attribute notes
+								const baselineText = attributeRow.cells[4]?.innerText.trim();
+								const destinationText = attributeRow.cells[9]?.innerText.trim();
+							
+								if (baselineText && destinationText) {
+									const diff = Diff.diffWords(baselineText, destinationText);
+
+									// Create a highlighted diff HTML string
+									const highlightedDiff = diff.map(part => {
+										if (part.added) {
+											return `<span class="added">${part.value}</span>`;
+										} else if (part.removed) {
+											return `<span class="removed">${part.value}</span>`;
+										} else {
+											return part.value; // Unchanged text
+										}
+									}).join("");
+
+									// Update destination column with the highlighted diff
+									attributeRow.cells[9].innerHTML = highlightedDiff;
+								}
+                        	})
+						}	
+					});
+				
+					const propertiesTables = document.querySelectorAll("table#properties");
+					propertiesTables.forEach(propertiesTable => {
+						// Find the second row in the metadata table
+						const rows = propertiesTable.querySelectorAll("tr:has(th.changed)");
+					
+						rows.forEach(row => {
+							const originalText = row.cells[1]?.innerText.trim();
+							const modifiedText = row.cells[2]?.innerText.trim();
+							if (originalText && modifiedText) {
+								const diff = Diff.diffWords(originalText, modifiedText);
+
+								// Create a highlighted diff HTML string
+								const highlightedDiff = diff.map(part => {
+									if (part.added) {
+										return `<span class="added">${part.value}</span>`;
+									} else if (part.removed) {
+										return `<span class="removed">${part.value}</span>`;
+									} else {
+										return part.value; // Unchanged text
+									}
+								}).join("");
+
+								// Update destination column with the highlighted diff
+								row.cells[2].innerHTML = highlightedDiff;
+							}
+						})
+					});
+				})</script>
+        <p>
+            <div class="topnav">
+                <div class="title-container">
+                    <span style="font-size:1rem;font-weight:bold">CIM Model Comparison Report:&nbsp;&nbsp;&nbsp;18v14 (baseline)&nbsp;&nbsp;<i class="fas fa-arrow-right" style="font-size:.8rem;font-weight:bold;text-align:center"></i>&nbsp;&nbsp;18v15 (destination)</span>
+                </div>
+                <div class="button-container">
+                    <button type="button" onClick="return toggleHeaders(false);"><i class="fas fa-compress-arrows-alt"></i></button>
+                </div>
+                <div class="button-container">
+                    <button type="button" onClick="return toggleHeaders(true);"><i class="fas fa-expand-arrows-alt"></i></button>
+                </div>
+                <div class="search-container">
+                    <input id="search-class-field" name="search-class-field" type="text" placeholder="Enter class name to search for..." size="35"><a id="search-link" href="#" onClick="return executeSearch();"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
+        </p>
+            
+        
+        <p>
+            <div class="wrap-collapsible">
+                <input id="collapsible-{21D32832-FF64-4213-B81C-55ACE35EEBFF}" packageNameId="{21D32832-FF64-4213-B81C-55ACE35EEBFF}" parentCollapsibleId="MX_EAID_21D32832_FF64_4213_B81C_55ACE35EEBFF" onClick="return togglePackageHeaderIcon(this);" class="toggle" type="checkbox"><label for="collapsible-{21D32832-FF64-4213-B81C-55ACE35EEBFF}" class="lbl-toggle" style="background-color:lightgray"><i id="package-icon-{21D32832-FF64-4213-B81C-55ACE35EEBFF}" class="fas fa-folder" style="font-size:20px;color:white;text-shadow:2px 2px 4px #000000;"></i>&nbsp;<a class="class-link" href="#">Grid</a>
+                    <div class="tooltip" style="text-align:right;">
+                        <i class="fas fa-info-circle" style="text-align:left;font-size:14px;color:white;text-shadow:1px 1px 2px #000000;"></i><span class="tooltiptext">This top package includes the CIM model related to the grid.</span>
+                    </div>
+                    <div class="lbl-home-icon">
+                        <a href="#"><i class="fas fa-home" style="font-size:20px;color:white;text-shadow:2px 2px 4px #000000;"></i></a>
+                    </div>
+                </label>
+                <div class="collapsible-content">
+                    <div class="content-inner">
+                        <p>
+                            <div class="wrap-collapsible">
+                                <input id="collapsible-{D2DD87AA-AF0C-477c-8E65-69D543D76521}" packageNameId="{D2DD87AA-AF0C-477c-8E65-69D543D76521}" parentCollapsibleId="{21D32832-FF64-4213-B81C-55ACE35EEBFF}" onClick="return togglePackageHeaderIcon(this);" class="toggle" type="checkbox"><label for="collapsible-{D2DD87AA-AF0C-477c-8E65-69D543D76521}" class="lbl-toggle" style="background-color:lightgray"><i id="package-icon-{D2DD87AA-AF0C-477c-8E65-69D543D76521}" class="fas fa-folder" style="font-size:20px;color:white;text-shadow:2px 2px 4px #000000;"></i>&nbsp;<a class="class-link" href="#">InfGrid</a>
+                                    <div class="tooltip" style="text-align:right;">
+                                        <i class="fas fa-info-circle" style="text-align:left;font-size:14px;color:white;text-shadow:1px 1px 2px #000000;"></i><span class="tooltiptext">This package and its subpackages contain informative (unstable) elements of the model, expected to evolve a lot or to be removed, and not published as IEC document yet. Some portions of it will be reworked and moved to normative packages as the need arises, and some portions may be removed.It should not be used to generate any formal documentation as this is an informative portion of the model.All informative UML modelling that is contained within the Informative packages (packages beginning with Inf*) is considered work under development and is subject to change or removal at any time.  Therefore, this content should be used at your own risk. Users are encouraged to participate in and/or submit use cases to the respective UCA Task Force for additions and/or features not yet covered by the CIM.</span>
+                                    </div>
+                                    <div class="lbl-home-icon">
+                                        <a href="#"><i class="fas fa-home" style="font-size:20px;color:white;text-shadow:2px 2px 4px #000000;"></i></a>
+                                    </div>
+                                </label>
+                                <div class="collapsible-content">
+                                    <div class="content-inner">
+                                        <p>
+                                            <div class="wrap-collapsible">
+                                                <input id="collapsible-{500389E9-5C8C-40f4-9EB4-19613576509E}" packageNameId="{500389E9-5C8C-40f4-9EB4-19613576509E}" parentCollapsibleId="{D2DD87AA-AF0C-477c-8E65-69D543D76521}" onClick="return togglePackageHeaderIcon(this);" class="toggle" type="checkbox"><label for="collapsible-{500389E9-5C8C-40f4-9EB4-19613576509E}" class="lbl-toggle" style="background-color:lightgray"><i id="package-icon-{500389E9-5C8C-40f4-9EB4-19613576509E}" class="fas fa-folder" style="font-size:20px;color:white;text-shadow:2px 2px 4px #000000;"></i>&nbsp;<a class="class-link" href="#">Metadata</a>
+                                                    <div class="tooltip" style="text-align:right;">
+                                                        <i class="fas fa-info-circle" style="text-align:left;font-size:14px;color:white;text-shadow:1px 1px 2px #000000;"></i><span class="tooltiptext">All informative UML modelling that is contained within the Informative packages (packages beginning with Inf*) is considered work under development and is subject to change or removal at any time.  Therefore, this content should be used at your own risk. Users are encouraged to participate in and/or submit use cases to the respective UCA Task Force for additions and/or features not yet covered by the CIM.</span>
+                                                    </div>
+                                                    <div class="lbl-home-icon">
+                                                        <a href="#"><i class="fas fa-home" style="font-size:20px;color:white;text-shadow:2px 2px 4px #000000;"></i></a>
+                                                    </div>
+                                                </label>
+                                                <div class="collapsible-content">
+                                                    <div class="content-inner">
+                                                        <p>
+                                                            <div class="wrap-collapsible">
+                                                                <input id="collapsible-{5FD5E78B-B7CC-4b39-9FFD-6B6E4EBF8643}" packageNameId="{5FD5E78B-B7CC-4b39-9FFD-6B6E4EBF8643}" parentCollapsibleId="{500389E9-5C8C-40f4-9EB4-19613576509E}" onClick="return togglePackageHeaderIcon(this);" class="toggle" type="checkbox"><label for="collapsible-{5FD5E78B-B7CC-4b39-9FFD-6B6E4EBF8643}" class="lbl-toggle" style="background-color:lightgray"><i id="package-icon-{5FD5E78B-B7CC-4b39-9FFD-6B6E4EBF8643}" class="fas fa-folder" style="font-size:20px;color:white;text-shadow:2px 2px 4px #000000;"></i>&nbsp;<a class="class-link" href="#">InfGenericDataset</a>
+                                                                    <div class="tooltip" style="text-align:right;">
+                                                                        <i class="fas fa-info-circle" style="text-align:left;font-size:14px;color:white;text-shadow:1px 1px 2px #000000;"></i><span class="tooltiptext">Generic descriptions of how domain data participates in datasets and alternate datasets.</span>
+                                                                    </div>
+                                                                    <div class="lbl-home-icon">
+                                                                        <a href="#"><i class="fas fa-home" style="font-size:20px;color:white;text-shadow:2px 2px 4px #000000;"></i></a>
+                                                                    </div>
+                                                                </label>
+                                                                <div class="collapsible-content">
+                                                                    <div class="content-inner">
+                                                                        <p>
+                                                                            <div class="wrap-collapsible">
+                                                                                <input id="collapsible-{CD702721-8184-4957-8ABC-79520200E26C}" packageNameId="{CD702721-8184-4957-8ABC-79520200E26C}" parentCollapsibleId="{5FD5E78B-B7CC-4b39-9FFD-6B6E4EBF8643}" onClick="return togglePackageHeaderIcon(this);" class="toggle" type="checkbox"><label for="collapsible-{CD702721-8184-4957-8ABC-79520200E26C}" class="lbl-toggle" style="background-color:lightgray"><i id="package-icon-{CD702721-8184-4957-8ABC-79520200E26C}" class="fas fa-folder" style="font-size:20px;color:white;text-shadow:2px 2px 4px #000000;"></i>&nbsp;<a class="class-link" href="#">InfGenericDatasetInstanceDiagrams</a>
+                                                                                    <div class="tooltip" style="text-align:right;">
+                                                                                        <i class="fas fa-info-circle" style="text-align:left;font-size:14px;color:white;text-shadow:1px 1px 2px #000000;"></i><span class="tooltiptext">No notes available.</span>
+                                                                                    </div>
+                                                                                    <div class="lbl-home-icon">
+                                                                                        <a href="#"><i class="fas fa-home" style="font-size:20px;color:white;text-shadow:2px 2px 4px #000000;"></i></a>
+                                                                                    </div>
+                                                                                </label>
+                                                                                <div class="collapsible-content">
+                                                                                    <div class="content-inner">
+                                                                                        <p>
+                                                                                            <h3>
+                                                                                                <p style="font-size: 1.1rem">Package 'InfGenericDatasetInstanceDiagrams' has no changes to the classes it contains.</p>
+                                                                                            </h3>
+                                                                                            <h2>Changed Diagrams:</h2>
+                                                                                            <p>
+                                                                                                <div id="{15D80B54-861A-4bae-91D8-934A9A2D99D0}" class="wrap-collapsible">
+                                                                                                    <input id="collapsible-{15D80B54-861A-4bae-91D8-934A9A2D99D0}" name="modPrecondition" diagramNameId="{15D80B54-861A-4bae-91D8-934A9A2D99D0}" parentCollapsibleId="{CD702721-8184-4957-8ABC-79520200E26C}" class="toggle" type="checkbox"><label for="collapsible-{15D80B54-861A-4bae-91D8-934A9A2D99D0}" class="lbl-toggle" style="background-color:#D6EAF8"><i class="far fa-file-image" style="font-size:18px;color:white;text-shadow:2px 2px 4px #000000;"></i>&nbsp;<a class="class-link" href="#{15D80B54-861A-4bae-91D8-934A9A2D99D0}">modPrecondition</a>
+                                                                                                        <div class="tooltip" style="text-align:right;">
+                                                                                                            <i class="fas fa-info-circle" style="text-align:left;font-size:14px;color:white;text-shadow:1px 1px 2px #000000;"></i><span class="tooltiptext">Describes a modification with preconditions.</span>
+                                                                                                        </div>
+                                                                                                        <div class="lbl-home-icon">
+                                                                                                            <a href="#"><i class="fas fa-home" style="font-size:20px;color:white;text-shadow:2px 2px 4px #000000;"></i></a>
+                                                                                                        </div>
+                                                                                                    </label>
+                                                                                                    <div class="collapsible-content">
+                                                                                                        <div class="content-inner">
+                                                                                                            <p>
+                                                                                                                <h3>
+                                                                                                                    <p style="font-size:1.1rem">
+                                                                                                                        <i class="far fa-file-image"></i>&nbsp;Diagram:
+                                                                                                                    </p>
+                                                                                                                </h3>
+                                                                                                                <div class="group">
+                                                                                                                    <p>
+                                                                                                                        <table id="diagrams" style="width:100%">
+                                                                                                                            <tr>
+                                                                                                                                <th style="width:50%">
+                                                                                                                                    <p>Baseline Model</p>
+                                                                                                                                </th><th style="width:50%">
+                                                                                                                                    <p>Destination Model</p>
+                                                                                                                                </th>
+                                                                                                                            </tr>
+                                                                                                                            <tr>
+                                                                                                                                <td style="width:50%">
+                                                                                                                                    <div class="diagram-box">
+                                                                                                                                        <p>
+                                                                                                                                            <img src="Images-baseline/EAID_15D80B54_861A_4bae_91D8_934A9A2D99D0.jpg" alt="modPrecondition Diagram">
+                                                                                                                                        </p>
+                                                                                                                                    </div>
+                                                                                                                                </td><td style="width:50%">
+                                                                                                                                    <div class="diagram-box">
+                                                                                                                                        <p>
+                                                                                                                                            <img src="Images-destination/EAID_15D80B54_861A_4bae_91D8_934A9A2D99D0.jpg" alt="modPrecondition Diagram">
+                                                                                                                                        </p>
+                                                                                                                                    </div>
+                                                                                                                                </td>
+                                                                                                                            </tr>
+                                                                                                                        </table>
+                                                                                                                    </p>
+                                                                                                                </div>
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </p>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </p>
+                                                                        <p>
+                                                                            <h3>
+                                                                                <p style="font-size: 1.1rem">Package 'InfGenericDataset' has no changes to the classes it contains.</p>
+                                                                            </h3>
+                                                                            <h3>
+                                                                                <p style="font-size: 1.1rem">Package 'InfGenericDataset' has no changes to the diagrams it contains.</p>
+                                                                            </h3>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                        <p>
+                                                            <h3>
+                                                                <p style="font-size: 1.1rem">Package 'Metadata' has no changes to the classes it contains.</p>
+                                                            </h3>
+                                                            <h3>
+                                                                <p style="font-size: 1.1rem">Package 'Metadata' has no changes to the diagrams it contains.</p>
+                                                            </h3>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </p>
+                                        <p>
+                                            <h3>
+                                                <p style="font-size: 1.1rem">Package 'InfGrid' has no changes to the classes it contains.</p>
+                                            </h3>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </p>
+                        <p>
+                            <h2>Changed Classes:</h2>
+                            <p>
+                                <div id="{990AB50C-5CF8-46d2-B5FF-887BBBD3346F}" class="wrap-collapsible">
+                                    <input id="collapsible-{990AB50C-5CF8-46d2-B5FF-887BBBD3346F}" name="GridCIMVersion" classNameId="{990AB50C-5CF8-46d2-B5FF-887BBBD3346F}" parentCollapsibleId="{21D32832-FF64-4213-B81C-55ACE35EEBFF}" class="toggle" type="checkbox"><label for="collapsible-{990AB50C-5CF8-46d2-B5FF-887BBBD3346F}" class="lbl-toggle" style="background-color:#D6EAF8"><i class="fas fa-cog" style="font-size:18px;color:white;text-shadow:2px 2px 4px #000000;"></i>&nbsp;<a class="class-link" href="#{990AB50C-5CF8-46d2-B5FF-887BBBD3346F}">GridCIMVersion</a>
+                                        <div class="tooltip" style="text-align:right;">
+                                            <i class="fas fa-info-circle" style="text-align:left;font-size:14px;color:white;text-shadow:1px 1px 2px #000000;"></i><span class="tooltiptext">This is the release version number assigned to Grid part of the CIM model. It is a point-in-time snapshot of the state of the CIM UML model that reflects a formal release of the CIM. This release version is distinct from the unique version (e.g. http://ucaiug.org/CIM/Base/1.0) associated with each package in the UML.</span>
+                                        </div>
+                                        <div class="lbl-home-icon">
+                                            <a href="#"><i class="fas fa-home" style="font-size:20px;color:white;text-shadow:2px 2px 4px #000000;"></i></a>
+                                        </div>
+                                    </label>
+                                    <div class="collapsible-content">
+                                        <div class="content-inner">
+                                            <p>
+                                                <h3>
+                                                    <p style="font-size:1.1rem">
+                                                        <i class="fas fa-bars"></i>&nbsp;Attributes:
+                                                    </p>
+                                                </h3>
+                                                <div>
+                                                    <p>
+                                                        <table id="attributes">
+                                                            <tr>
+                                                                <th style="width:50%" colspan="5">
+                                                                    <p>Baseline Model</p>
+                                                                </th><th style="width:50%" colspan="5">
+                                                                    <p>Destination Model</p>
+                                                                </th>
+                                                            </tr>
+                                                            <tr valign="top">
+                                                                <td style="background-color:#D6EAF8;white-space:nowrap">
+                                                                    <p id="date">date</p>
+                                                                </td><td style="background-color:#D6EAF8;white-space:nowrap">
+                                                                    <div class="attribute-tooltip">
+                                                                        <i class="fas fa-info-circle" style="text-align:left;font-size:12px;color:white;text-shadow:1px 1px 2px #000000;"></i><span class="attribute-tooltiptext" style="font-size:16px;font-weight:bold;"><i class="fas fa-cubes"></i>&nbsp;Attribute 'date' Metadata:
+                                                                            <br>
+                                                                            <table id="properties">
+                                                                                <tr>
+                                                                                    <th style="background-color:lightgray;width:10%">
+                                                                                        <p>&nbsp;</p>
+                                                                                    </th><th style="text-align:left;font-weight:bold;background-color:lightgray;width:45%">
+                                                                                        <p>Baseline Model</p>
+                                                                                    </th><th style="text-align:left;font-weight:bold;background-color:lightgray;width:45%">
+                                                                                        <p>Destination Model</p>
+                                                                                    </th>
+                                                                                </tr>
+                                                                                <tr valign="top">
+                                                                                    <th class="changed" style="background-color:#D6EAF8">
+                                                                                        <p class="changed" style="font-weight:bold">Default</p>
+                                                                                    </th><td>
+                                                                                        <p>2024-12-05</p>
+                                                                                    </td><td>
+                                                                                        <p>2025-01-22</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </span>
+                                                                    </div>
+                                                                </td><td>
+                                                                    <p>0..1</p>
+                                                                </td><td>
+                                                                    <p>
+                                                                        <a href="#{C724EF94-9D38-4673-A889-46E7C5C6321C}" onClick="autoExpand('{C724EF94-9D38-4673-A889-46E7C5C6321C}');">Date</a>
+                                                                    </p>
+                                                                </td><td>
+                                                                    <p>Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05.</p>
+                                                                </td><td style="background-color:#D6EAF8;white-space:nowrap">
+                                                                    <p id="date">date</p>
+                                                                </td><td style="background-color:#D6EAF8;white-space:nowrap">
+                                                                    <div class="attribute-tooltip">
+                                                                        <i class="fas fa-info-circle" style="text-align:left;font-size:12px;color:white;text-shadow:1px 1px 2px #000000;"></i><span class="attribute-tooltiptext" style="font-size:16px;font-weight:bold;"><i class="fas fa-cubes"></i>&nbsp;Attribute 'date' Metadata:
+                                                                            <br>
+                                                                            <table id="properties">
+                                                                                <tr>
+                                                                                    <th style="background-color:lightgray;width:10%">
+                                                                                        <p>&nbsp;</p>
+                                                                                    </th><th style="text-align:left;font-weight:bold;background-color:lightgray;width:45%">
+                                                                                        <p>Baseline Model</p>
+                                                                                    </th><th style="text-align:left;font-weight:bold;background-color:lightgray;width:45%">
+                                                                                        <p>Destination Model</p>
+                                                                                    </th>
+                                                                                </tr>
+                                                                                <tr valign="top">
+                                                                                    <th class="changed" style="background-color:#D6EAF8">
+                                                                                        <p class="changed" style="font-weight:bold">Default</p>
+                                                                                    </th><td>
+                                                                                        <p>2024-12-05</p>
+                                                                                    </td><td>
+                                                                                        <p>2025-01-22</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </span>
+                                                                    </div>
+                                                                </td><td>
+                                                                    <p>0..1</p>
+                                                                </td><td>
+                                                                    <p>
+                                                                        <a href="#{C724EF94-9D38-4673-A889-46E7C5C6321C}" onClick="autoExpand('{C724EF94-9D38-4673-A889-46E7C5C6321C}');">Date</a>
+                                                                    </p>
+                                                                </td><td>
+                                                                    <p>Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05.</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr valign="top">
+                                                                <td style="background-color:#D6EAF8;white-space:nowrap">
+                                                                    <p id="version">version</p>
+                                                                </td><td style="background-color:#D6EAF8;white-space:nowrap">
+                                                                    <div class="attribute-tooltip">
+                                                                        <i class="fas fa-info-circle" style="text-align:left;font-size:12px;color:white;text-shadow:1px 1px 2px #000000;"></i><span class="attribute-tooltiptext" style="font-size:16px;font-weight:bold;"><i class="fas fa-cubes"></i>&nbsp;Attribute 'version' Metadata:
+                                                                            <br>
+                                                                            <table id="properties">
+                                                                                <tr>
+                                                                                    <th style="background-color:lightgray;width:10%">
+                                                                                        <p>&nbsp;</p>
+                                                                                    </th><th style="text-align:left;font-weight:bold;background-color:lightgray;width:45%">
+                                                                                        <p>Baseline Model</p>
+                                                                                    </th><th style="text-align:left;font-weight:bold;background-color:lightgray;width:45%">
+                                                                                        <p>Destination Model</p>
+                                                                                    </th>
+                                                                                </tr>
+                                                                                <tr valign="top">
+                                                                                    <th class="changed" style="background-color:#D6EAF8">
+                                                                                        <p class="changed" style="font-weight:bold">Default</p>
+                                                                                    </th><td>
+                                                                                        <p>18v14</p>
+                                                                                    </td><td>
+                                                                                        <p>18v15</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </span>
+                                                                    </div>
+                                                                </td><td>
+                                                                    <p>0..1</p>
+                                                                </td><td>
+                                                                    <p>
+                                                                        <a href="#{E50DF78B-84CE-42e9-A275-A956DEF45490}" onClick="autoExpand('{E50DF78B-84CE-42e9-A275-A956DEF45490}');">String</a>
+                                                                    </p>
+                                                                </td><td>
+                                                                    <p>Form is XXvYY where XX is the major CIM release version and the YY is the minor version. For example 18v03.</p>
+                                                                </td><td style="background-color:#D6EAF8;white-space:nowrap">
+                                                                    <p id="version">version</p>
+                                                                </td><td style="background-color:#D6EAF8;white-space:nowrap">
+                                                                    <div class="attribute-tooltip">
+                                                                        <i class="fas fa-info-circle" style="text-align:left;font-size:12px;color:white;text-shadow:1px 1px 2px #000000;"></i><span class="attribute-tooltiptext" style="font-size:16px;font-weight:bold;"><i class="fas fa-cubes"></i>&nbsp;Attribute 'version' Metadata:
+                                                                            <br>
+                                                                            <table id="properties">
+                                                                                <tr>
+                                                                                    <th style="background-color:lightgray;width:10%">
+                                                                                        <p>&nbsp;</p>
+                                                                                    </th><th style="text-align:left;font-weight:bold;background-color:lightgray;width:45%">
+                                                                                        <p>Baseline Model</p>
+                                                                                    </th><th style="text-align:left;font-weight:bold;background-color:lightgray;width:45%">
+                                                                                        <p>Destination Model</p>
+                                                                                    </th>
+                                                                                </tr>
+                                                                                <tr valign="top">
+                                                                                    <th class="changed" style="background-color:#D6EAF8">
+                                                                                        <p class="changed" style="font-weight:bold">Default</p>
+                                                                                    </th><td>
+                                                                                        <p>18v14</p>
+                                                                                    </td><td>
+                                                                                        <p>18v15</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </span>
+                                                                    </div>
+                                                                </td><td>
+                                                                    <p>0..1</p>
+                                                                </td><td>
+                                                                    <p>
+                                                                        <a href="#{E50DF78B-84CE-42e9-A275-A956DEF45490}" onClick="autoExpand('{E50DF78B-84CE-42e9-A275-A956DEF45490}');">String</a>
+                                                                    </p>
+                                                                </td><td>
+                                                                    <p>Form is XXvYY where XX is the major CIM release version and the YY is the minor version. For example 18v03.</p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </p>
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </p>
+                            <h2>Changed Diagrams:</h2>
+                            <p>
+                                <div id="{FB07D92D-5F4D-4fdc-AD82-2376FAF51037}" class="wrap-collapsible">
+                                    <input id="collapsible-{FB07D92D-5F4D-4fdc-AD82-2376FAF51037}" name="BaseDependencies" diagramNameId="{FB07D92D-5F4D-4fdc-AD82-2376FAF51037}" parentCollapsibleId="{21D32832-FF64-4213-B81C-55ACE35EEBFF}" class="toggle" type="checkbox"><label for="collapsible-{FB07D92D-5F4D-4fdc-AD82-2376FAF51037}" class="lbl-toggle" style="background-color:#D6EAF8"><i class="far fa-file-image" style="font-size:18px;color:white;text-shadow:2px 2px 4px #000000;"></i>&nbsp;<a class="class-link" href="#{FB07D92D-5F4D-4fdc-AD82-2376FAF51037}">BaseDependencies</a>
+                                        <div class="tooltip" style="text-align:right;">
+                                            <i class="fas fa-info-circle" style="text-align:left;font-size:14px;color:white;text-shadow:1px 1px 2px #000000;"></i><span class="tooltiptext">This diagram shows all base packages and their logical dependencies.</span>
+                                        </div>
+                                        <div class="lbl-home-icon">
+                                            <a href="#"><i class="fas fa-home" style="font-size:20px;color:white;text-shadow:2px 2px 4px #000000;"></i></a>
+                                        </div>
+                                    </label>
+                                    <div class="collapsible-content">
+                                        <div class="content-inner">
+                                            <p>
+                                                <h3>
+                                                    <p style="font-size: 1.1rem">
+                                                        <i class="fas fa-cubes"></i>&nbsp;Metadata:
+                                                    </p>
+                                                </h3>
+                                                <table id="properties">
+                                                    <tr>
+                                                        <th style="background-color:lightgray;width:10%">
+                                                            <p>&nbsp;</p>
+                                                        </th><th style="text-align:left;font-weight:bold;background-color:lightgray;width:45%">
+                                                            <p>Baseline Model</p>
+                                                        </th><th style="text-align:left;font-weight:bold;background-color:lightgray;width:45%">
+                                                            <p>Destination Model</p>
+                                                        </th>
+                                                    </tr>
+                                                    <tr valign="top">
+                                                        <th class="changed" style="background-color:#D6EAF8">
+                                                            <p class="changed" style="font-weight:bold">ModifiedDate</p>
+                                                        </th><td>
+                                                            <p>2023-02-07 22:43:55</p>
+                                                        </td><td>
+                                                            <p>2025-01-22 22:27:40</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </p>
+                                            <p>
+                                                <h3>
+                                                    <p style="font-size:1.1rem">
+                                                        <i class="far fa-file-image"></i>&nbsp;Diagram:
+                                                    </p>
+                                                </h3>
+                                                <div class="group">
+                                                    <p>
+                                                        <table id="diagrams" style="width:100%">
+                                                            <tr>
+                                                                <th style="width:50%">
+                                                                    <p>Baseline Model</p>
+                                                                </th><th style="width:50%">
+                                                                    <p>Destination Model</p>
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:50%">
+                                                                    <div class="diagram-box">
+                                                                        <p>
+                                                                            <img src="Images-baseline/EAID_FB07D92D_5F4D_4fdc_AD82_2376FAF51037.jpg" alt="BaseDependencies Diagram">
+                                                                        </p>
+                                                                    </div>
+                                                                </td><td style="width:50%">
+                                                                    <div class="diagram-box">
+                                                                        <p>
+                                                                            <img src="Images-destination/EAID_FB07D92D_5F4D_4fdc_AD82_2376FAF51037.jpg" alt="BaseDependencies Diagram">
+                                                                        </p>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </p>
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </p>
+            
+
+    </body>
+</html>
