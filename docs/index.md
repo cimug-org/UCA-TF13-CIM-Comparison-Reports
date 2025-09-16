@@ -4,7 +4,7 @@
 
 This site makes available online [cim-compare](https://cim-compare.ucaiug.io/) reports reflecting the ongoing work on the next release of the [Common Information Model](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)). Note that reports are published by the UTF13 CIM Model Management Team at the time an internal working release is produced. Interim models are generally not made publically available to non-participants until the final stable release is published. Therefore, active participation is encouraged.
 
-<a href="http://iectc57.ucaiug.org/WG13/Shared%20Documents/61970%20Work%20in%20progress;%20models,%20documents%20and%20issues/CIM18/Canonical%20Models/CIM_Grid18v15_Enterprise14v00_Market04v14.zip" style="display: inline-flex; align-items: center; text-decoration: none;">
+<a href="[http://iectc57.ucaiug.org/WG13/Shared%20Documents/61970%20Work%20in%20progress;%20models,%20documents%20and%20issues/CIM18/Canonical%20Models/CIM_Grid18v15_Enterprise14v00_Market04v14.zip](https://ucatf.org/tf13/?wpcp_link=JTdCJTIyc291cmNlJTIyJTNBJTIyOWJlMTgxMjhiYjZiZjA1NzZiZWU0ZDY1ZjllN2Q2OGQlMjIlMkMlMjJhY2NvdW50X2lkJTIyJTNBJTIyMTg2MDYxNzEwNTYlMjIlMkMlMjJsYXN0Rm9sZGVyJTIyJTNBJTIyMzA5MjMxOTk4Mjk4JTIyJTJDJTIyZm9sZGVyUGF0aCUyMiUzQSUyMld5SXpNVFkyTVRjMk9UZ3dOamdpTENJek1EZzFNVGd6TURJek9EWWlMQ0l6TURnMk1EWTVNRGczTkRJaUxDSXpNRGcyTURrNU1UTXpOakFpTENJek1Ea3lNekU1T1RneU9UZ2lYUSUzRCUzRCUyMiUyQyUyMmZvY3VzX2lkJTIyJTNBJTIyMTc4ODI4NzY5Njc4OCUyMiU3RA%3D%3D)" style="display: inline-flex; align-items: center; text-decoration: none;">
     <img src="readme-icons/earose.png" alt="Latest CIM18 release" width="30" height="30" style="margin-right: 8px;"/> 
     <span>For those with appropriate permissions the latest CIM18 release is here.</span>
 </a>
