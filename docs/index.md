@@ -4,7 +4,7 @@
 
 This site makes available online [cim-compare](https://cim-compare.ucaiug.io/) reports reflecting the ongoing work on the next release of the [Common Information Model](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)). Note that reports are published by the UTF13 CIM Model Management Team at the time an internal working release is produced. Interim models are generally not made publically available to non-participants until the final stable release is published. Therefore, active participation is encouraged.
 
-<a href="https://ucatf.org/tf13/?wpcp_link=JTdCJTIyc291cmNlJTIyJTNBJTIyOWJlMTgxMjhiYjZiZjA1NzZiZWU0ZDY1ZjllN2Q2OGQlMjIlMkMlMjJhY2NvdW50X2lkJTIyJTNBJTIyMTg2MDYxNzEwNTYlMjIlMkMlMjJsYXN0Rm9sZGVyJTIyJTNBJTIyMzA5MjMxOTk4Mjk4JTIyJTJDJTIyZm9sZGVyUGF0aCUyMiUzQSUyMld5SXpNVFkyTVRjMk9UZ3dOamdpTENJek1EZzFNVGd6TURJek9EWWlMQ0l6TURnMk1EWTVNRGczTkRJaUxDSXpNRGcyTURrNU1UTXpOakFpTENJek1Ea3lNekU1T1RneU9UZ2lYUSUzRCUzRCUyMiUyQyUyMmZvY3VzX2lkJTIyJTNBJTIyMTc4ODI4NzY5Njc4OCUyMiU3RA%3D%3D" style="display: inline-flex; align-items: center; text-decoration: none;">
+<a href="https://ucatf.org/tf13/?wpcp_link=JTdCJTIyc291cmNlJTIyJTNBJTIyOWJlMTgxMjhiYjZiZjA1NzZiZWU0ZDY1ZjllN2Q2OGQlMjIlMkMlMjJhY2NvdW50X2lkJTIyJTNBJTIyMTg2MDYxNzEwNTYlMjIlMkMlMjJsYXN0Rm9sZGVyJTIyJTNBJTIyMzA5MjMxOTk4Mjk4JTIyJTJDJTIyZm9sZGVyUGF0aCUyMiUzQSUyMld5SXpNVFkyTVRjMk9UZ3dOamdpTENJek1EZzFNVGd6TURJek9EWWlMQ0l6TURnMk1EWTVNRGczTkRJaUxDSXpNRGcyTURrNU1UTXpOakFpTENJek1Ea3lNekU1T1RneU9UZ2lYUSUzRCUzRCUyMiUyQyUyMmZvY3VzX2lkJTIyJTNBJTIyMjIxMzI3MDI5MzY3MSUyMiU3RA%3D%3D" style="display: inline-flex; align-items: center; text-decoration: none;">
     <img src="readme-icons/earose.png" alt="Latest CIM18 release" width="30" height="30" style="margin-right: 8px;"/> 
     <span>For those with appropriate permissions the latest CIM18 release is here.</span>
 </a>
@@ -26,7 +26,7 @@ Step 1: Select Watch and then Custom | Step 2: Then check 'Discussions' and clic
 
  Model Release Date | Release Version | Baseline Model Compared| Destination Model Compared | Report Link | Release Notes
 :------------------:|:---------------:|:----------------------:|:--------------------------:|:----------- |:-------------
-22-Jan-2025 | CIM18v15 | CIM17v40 | CIM18v15 | CIM17v40 > CIM18v15<sup>1</sup> | [CIM18v15_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/17v40-18v15/CIM18v15_ReleaseNotes.pdf){:target="_blank"}
+29-Apr-2026 | CIM18v16 | CIM17v40 | CIM18v16 | CIM17v40 > CIM18v16<sup>1</sup> | [CIM18v16_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/17v40-18v16/CIM18v16_ReleaseNotes.pdf){:target="_blank"}
 
 <sup>1</sup> The link to this report references a `.zip` file as the size of the report exceeds GitHub repository maximum size restrictions. You may download and view the report offline in your local browser.
 
@@ -34,6 +34,7 @@ Step 1: Select Watch and then Custom | Step 2: Then check 'Discussions' and clic
 
  Model Release Date | Release Version | Baseline Model Compared| Destination Model Compared | Report Link | Release Notes
 :------------------:|:---------------:|:----------------------:|:--------------------------:|:----------- |:-------------
+29-Apr-2026 | CIM18v16 | CIM18v15 | CIM18v16 | [CIM18v15 > CIM18v16](https://utf13-reports.ucaiug.io/18v15-18v16/comparison-report.html){:target="_blank"} | [CIM18v16_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/18v15-18v16/CIM18v15_ReleaseNotes.pdf){:target="_blank"}
 22-Jan-2025 | CIM18v15 | CIM18v14 | CIM18v15 | [CIM18v14 > CIM18v15](https://utf13-reports.ucaiug.io/18v14-18v15/comparison-report.html){:target="_blank"} | [CIM18v15_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/18v14-18v15/CIM18v15_ReleaseNotes.pdf){:target="_blank"}
 05-Dec-2024 | CIM18v14 | CIM18v13 | CIM18v14 | [CIM18v13 > CIM18v14](https://utf13-reports.ucaiug.io/18v13-18v14/comparison-report.html){:target="_blank"} | [CIM18v14_ReleaseNotes.pdf](https://utf13-reports.ucaiug.io/18v13-18v14/CIM18v14_ReleaseNotes.pdf){:target="_blank"}
 23-Oct-2024 | CIM18v13 | CIM18v12 | CIM18v13 | [CIM18v12 > CIM18v13](https://utf13-reports.ucaiug.io/18v12-18v13/comparison-report.html){:target="_blank"} | CIM18v13_ReleaseNotes.pdf
