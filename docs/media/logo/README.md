@@ -1,6 +1,6 @@
 # TF13 CIM Comparison Reports logo
 
-The logo is the CIM Users Group disc with a report page on it, next to "TF13" and "CIM Comparison Reports".
+The logo is the CIM Users Group disc with a report page on it, next to "UCA TF13" and "CIM Comparison Reports".
 
 | File | Use |
 |---|---|
@@ -10,4 +10,4 @@ The logo is the CIM Users Group disc with a report page on it, next to "TF13" an
 | `favicon.ico` | Browser icon (16, 32 and 48 px) |
 | `tf13-reports-social-1280x640.png` | GitHub social preview (Settings › Social preview) |
 
-"TF13" and "CIM Comparison Reports" are set in [Montserrat](https://github.com/JulietaUla/Montserrat) (Bold and SemiBold) and converted to outlines, so the SVGs need no fonts. Montserrat is licensed under the SIL Open Font License; see `Montserrat-OFL.txt`.
+"UCA TF13" and "CIM Comparison Reports" are set in [Montserrat](https://github.com/JulietaUla/Montserrat) (Bold and SemiBold) and converted to outlines, so the SVGs need no fonts. Montserrat is licensed under the SIL Open Font License; see `Montserrat-OFL.txt`.
