@@ -1,4 +1,4 @@
-<h1 id="uca-tf13-cim-comparison-reports"><img src="media/logo/tf13-reports-logo.svg#gh-light-mode-only" alt="UCA TF13 CIM Comparison Reports" height="72"><img src="media/logo/tf13-reports-logo-dark.svg#gh-dark-mode-only" alt="UCA TF13 CIM Comparison Reports" height="72"></h1>
+<h1 id="uca-tf13-cim-comparison-reports"><img src="media/logo/tf13-reports-logo.svg#gh-light-mode-only" alt="UCA TF13 CIM Comparison Reports" height="90"><img src="media/logo/tf13-reports-logo-dark.svg#gh-dark-mode-only" alt="UCA TF13 CIM Comparison Reports" height="90"></h1>
 
 \[[GitHub Repo](https://github.com/cimug-org/UCA-TF13-CIM-Comparison-Reports)\]
 
