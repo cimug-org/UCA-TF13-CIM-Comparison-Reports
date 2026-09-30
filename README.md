@@ -1,3 +1,3 @@
-<h1 id="uca-tf13-cim-comparison-reports"><img src="docs/media/logo/tf13-reports-logo.svg#gh-light-mode-only" alt="UCA TF13 CIM Comparison Reports" height="90"><img src="docs/media/logo/tf13-reports-logo-dark.svg#gh-dark-mode-only" alt="UCA TF13 CIM Comparison Reports" height="90"></h1>
+<h1 id="uca-tf13-cim-comparison-reports"><img src="docs/media/logo/tf13-reports-logo.svg#gh-light-mode-only" alt="UCA TF13 CIM Comparison Reports" height="72"><img src="docs/media/logo/tf13-reports-logo-dark.svg#gh-dark-mode-only" alt="UCA TF13 CIM Comparison Reports" height="72"></h1>
 
 This repository hosts the UCA TF13 website (i.e. https://utf13-reports.ucaiug.io) used for publishing [cim-compare](https://cim-compare.ucaiug.io) model comparison reports of ongoing work on the next release of the CIM. These reports and associated artifacts are made available by UCAIug and licensed under the Apache 2.0 open source license.
