@@ -2,7 +2,7 @@
 
 \[[GitHub Repo](https://github.com/cimug-org/UCA-TF13-CIM-Comparison-Reports)\]
 
-This site makes available online [cim-compare](https://cim-compare.ucaiug.io/) reports reflecting the ongoing work on the next release of the [Common Information Model](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)). Note that reports are published by the UCA TF13 CIM Model Management Team at the time an internal working release is produced. Interim models are generally not made publicly available to non-participants until the final stable release is published. Therefore, active participation is encouraged.
+This site makes available online [cim-compare](https://cim-compare.ucaiug.io/) reports reflecting the ongoing work on the next release of the [Common Information Model](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)). Note that reports are published by the UCA TF13 (UTF13) CIM Model Management Team at the time an internal working release is produced. Interim models are generally not made publicly available to non-participants until the final stable release is published. Therefore, active participation is encouraged.
 
 Reports compare the Grid (IEC 61970) package and were generated with cim-compare 2.0.1.
 
