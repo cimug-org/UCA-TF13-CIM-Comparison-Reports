@@ -17,7 +17,7 @@ This site makes available online [cim-compare](https://cim-compare.ucaiug.io/) r
 
 Reports compare the Grid (IEC 61970) package and were generated with cim-compare 2.0.1.
 
-<a href="https://ucatf.org/tf13/?wpcp_link=JTdCJTIyc291cmNlJTIyJTNBJTIyOWJlMTgxMjhiYjZiZjA1NzZiZWU0ZDY1ZjllN2Q2OGQlMjIlMkMlMjJhY2NvdW50X2lkJTIyJTNBJTIyMTg2MDYxNzEwNTYlMjIlMkMlMjJsYXN0Rm9sZGVyJTIyJTNBJTIyMzA5MjMxOTk4Mjk4JTIyJTJDJTIyZm9sZGVyUGF0aCUyMiUzQSUyMld5SXpNVFkyTVRjMk9UZ3dOamdpTENJek1EZzFNVGd6TURJek9EWWlMQ0l6TURnMk1EWTVNRGczTkRJaUxDSXpNRGcyTURrNU1UTXpOakFpTENJek1Ea3lNekU1T1RneU9UZ2lYUSUzRCUzRCUyMiUyQyUyMmZvY3VzX2lkJTIyJTNBJTIyMjIxMzI3MDI5MzY3MSUyMiU3RA%3D%3D" style="display: inline-flex; align-items: center; text-decoration: none;">
+<a href="https://ucatf.org/tf13/?wpcp_link=JTdCJTIyc291cmNlJTIyJTNBJTIyY2MyYmE5OWUzZmY1OTgyOWQ5ZWMyOWI1NWE4ODgyYWElMjIlMkMlMjJhY2NvdW50X2lkJTIyJTNBJTIyMzk1MzU1MTMyMzMlMjIlMkMlMjJsYXN0Rm9sZGVyJTIyJTNBJTIyMzA5MjMxOTk4Mjk4JTIyJTJDJTIyZm9sZGVyUGF0aCUyMiUzQSUyMld5SXpNVFkyTVRjMk9UZ3dOamdpTENJek1EZzFNVGd6TURJek9EWWlMQ0l6TURnMk1EWTVNRGczTkRJaUxDSXpNRGcyTURrNU1UTXpOakFpTENJek1Ea3lNekU1T1RneU9UZ2lYUSUzRCUzRCUyMiUyQyUyMmZvY3VzX2lkJTIyJTNBJTIyMzA5MjMxOTk4Mjk4JTIyJTdE" style="display: inline-flex; align-items: center; text-decoration: none;">
     <img src="readme-icons/earose.png" alt="Latest CIM18 release" width="30" height="30" style="margin-right: 8px;"/> 
     <span>For those with appropriate permissions the latest CIM18 release is here.</span>
 </a>
