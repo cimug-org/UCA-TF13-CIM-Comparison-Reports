@@ -19,7 +19,7 @@ Reports compare the Grid (formerly IEC61970) package and were generated with cim
 
 <a href="https://ucatf.org/tf13/?wpcp_link=JTdCJTIyc291cmNlJTIyJTNBJTIyY2MyYmE5OWUzZmY1OTgyOWQ5ZWMyOWI1NWE4ODgyYWElMjIlMkMlMjJhY2NvdW50X2lkJTIyJTNBJTIyMzk1MzU1MTMyMzMlMjIlMkMlMjJsYXN0Rm9sZGVyJTIyJTNBJTIyMzA5MjMxOTk4Mjk4JTIyJTJDJTIyZm9sZGVyUGF0aCUyMiUzQSUyMld5SXpNVFkyTVRjMk9UZ3dOamdpTENJek1EZzFNVGd6TURJek9EWWlMQ0l6TURnMk1EWTVNRGczTkRJaUxDSXpNRGcyTURrNU1UTXpOakFpTENJek1Ea3lNekU1T1RneU9UZ2lYUSUzRCUzRCUyMiUyQyUyMmZvY3VzX2lkJTIyJTNBJTIyMzA5MjMxOTk4Mjk4JTIyJTdE" style="display: inline-flex; align-items: center; text-decoration: none;">
     <img src="readme-icons/earose.png" alt="Latest CIM18 release" width="30" height="30" style="margin-right: 8px;"/> 
-    <span>For those with appropriate permissions the latest CIM18 release is here.</span>
+    <span>For those with appropriate permissions the Sparx EA project files for the latest CIM18 release are here.</span>
 </a>
 <br/>
 
