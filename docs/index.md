@@ -15,7 +15,7 @@
 
 This site makes available online [cim-compare](https://cim-compare.ucaiug.io/) reports reflecting the ongoing work on the next release of the [Common Information Model](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)). Note that reports are published by the UCA TF13 (UTF13) CIM Model Management Team at the time an internal working release is produced. Interim models are generally not made publicly available to non-participants until the final stable release is published. Therefore, active participation is encouraged.
 
-Reports compare the Grid (IEC 61970) package and were generated with cim-compare 2.0.1.
+Reports compare the Grid (IEC61970) package and were generated with cim-compare 2.0.1.
 
 <a href="https://ucatf.org/tf13/?wpcp_link=JTdCJTIyc291cmNlJTIyJTNBJTIyY2MyYmE5OWUzZmY1OTgyOWQ5ZWMyOWI1NWE4ODgyYWElMjIlMkMlMjJhY2NvdW50X2lkJTIyJTNBJTIyMzk1MzU1MTMyMzMlMjIlMkMlMjJsYXN0Rm9sZGVyJTIyJTNBJTIyMzA5MjMxOTk4Mjk4JTIyJTJDJTIyZm9sZGVyUGF0aCUyMiUzQSUyMld5SXpNVFkyTVRjMk9UZ3dOamdpTENJek1EZzFNVGd6TURJek9EWWlMQ0l6TURnMk1EWTVNRGczTkRJaUxDSXpNRGcyTURrNU1UTXpOakFpTENJek1Ea3lNekU1T1RneU9UZ2lYUSUzRCUzRCUyMiUyQyUyMmZvY3VzX2lkJTIyJTNBJTIyMzA5MjMxOTk4Mjk4JTIyJTdE" style="display: inline-flex; align-items: center; text-decoration: none;">
     <img src="readme-icons/earose.png" alt="Latest CIM18 release" width="30" height="30" style="margin-right: 8px;"/> 
