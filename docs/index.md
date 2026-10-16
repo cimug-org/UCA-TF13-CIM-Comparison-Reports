@@ -23,11 +23,22 @@ Reports compare the Grid (formerly IEC61970) package and were generated with cim
 </a>
 <br/>
 
-To be notified as new releases and comparison reports become available please click on the GitHub Repo link above and subscribe as a watcher via:
-
-Step 1: Select Watch and then Custom | Step 2: Then check 'Discussions' and click 'Apply'
----------|---------
-[![image](https://github.com/user-attachments/assets/d5f0958b-80b5-48c8-b125-50b4ae3281a8)](https://github.com/user-attachments/assets/d5f0958b-80b5-48c8-b125-50b4ae3281a8) | [![image](https://github.com/user-attachments/assets/75ec4f2d-d11d-4d73-a66e-9b5d59203d03)](https://github.com/user-attachments/assets/75ec4f2d-d11d-4d73-a66e-9b5d59203d03)
+<div class="tf13-notify">
+  <p class="tf13-notify-text"><strong>Get notified of new releases and reports.</strong> On the <a href="https://github.com/cimug-org/UCA-TF13-CIM-Comparison-Reports">GitHub repo</a>, choose <b>Watch&nbsp;▾ › Custom</b>, tick <b>Discussions</b> and click <b>Apply</b>.</p>
+  <details class="tf13-notify-how">
+    <summary>Show me how</summary>
+    <div class="tf13-notify-steps">
+      <figure>
+        <a href="https://github.com/user-attachments/assets/d5f0958b-80b5-48c8-b125-50b4ae3281a8" target="_blank"><img src="https://github.com/user-attachments/assets/d5f0958b-80b5-48c8-b125-50b4ae3281a8" alt="GitHub Watch menu with Custom selected"></a>
+        <figcaption><b>1</b> Select Watch, then Custom</figcaption>
+      </figure>
+      <figure>
+        <a href="https://github.com/user-attachments/assets/75ec4f2d-d11d-4d73-a66e-9b5d59203d03" target="_blank"><img src="https://github.com/user-attachments/assets/75ec4f2d-d11d-4d73-a66e-9b5d59203d03" alt="Subscribe dialog with Discussions ticked"></a>
+        <figcaption><b>2</b> Tick Discussions, then click Apply</figcaption>
+      </figure>
+    </div>
+  </details>
+</div>
 
 ## Historical Reports for IEC 61970-301 International Standards
 
