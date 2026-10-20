@@ -1,6 +1,6 @@
-# TF13 CIM Comparison Reports logo
+# TF13 CIM Releases logo
 
-The logo is the UCA TF13 logo next to "CIM Comparison Reports" and the CIM Model Management logo, following the CIM Model Management brand kit (the same branding as the CIM Model Managers Report).
+The logo is the UCA TF13 logo next to "CIM Releases" and the CIM Model Management logo, following the CIM Model Management brand kit (the same branding as the CIM Model Managers Report).
 
 | File | Use |
 |---|---|
@@ -10,4 +10,4 @@ The logo is the UCA TF13 logo next to "CIM Comparison Reports" and the CIM Model
 | `favicon.ico` | Browser icon (16, 32 and 48 px); the same file is at `docs/favicon.ico` |
 | `tf13-reports-social-1280x640.png` | GitHub social preview (upload under Settings › Social preview) |
 
-"CIM Comparison Reports" is set in Arial Bold (rendered with the metric-identical Liberation Sans Bold) and converted to outlines, so the SVGs need no fonts. The website's navy header is built in HTML and CSS from the logos in `../brand/`; see `docs/index.md` and `docs/assets/css/style.scss`.
+"CIM Releases" is set in Arial Bold (rendered with the metric-identical Liberation Sans Bold) and converted to outlines, so the SVGs need no fonts. The website's navy header is built in HTML and CSS from the logos in `../brand/`; see `docs/index.md` and `docs/assets/css/style.scss`.

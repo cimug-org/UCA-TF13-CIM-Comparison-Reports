@@ -2,7 +2,11 @@
 # Primer is the theme GitHub Pages uses when none is named; it is named here
 # so that assets/css/style.scss can build on it.
 theme: jekyll-theme-primer
-title: UCA-TF13-CIM-Comparison-Reports
+title: UCA TF13 CIM Grid Package Releases
+tagline: Published and interim CIM Grid package releases
+description: >-
+  Published and interim releases of the CIM Grid package from UCA TF13,
+  with release notes and comparison reports.
 
 # Primer prints the site title above a page whose title differs from it.
 # index.md's first heading is the logo (HTML), which Pages does not read as a
@@ -18,11 +22,11 @@ defaults:
         path: /media/logo/tf13-reports-social-1280x640.png
         width: 1280
         height: 640
-        alt: "UCA TF13 CIM Comparison Reports"
+        alt: "UCA TF13 CIM Releases"
   - scope:
       path: "index.md"
     values:
-      title: UCA-TF13-CIM-Comparison-Reports
+      title: UCA TF13 CIM Grid Package Releases
 
 # Header buttons (index.md). Update with each new interim release or IEC edition.
 tf13_interim_release: CIM18v16
