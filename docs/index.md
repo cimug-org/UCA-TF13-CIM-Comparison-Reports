@@ -9,9 +9,13 @@
     </div>
     <img class="tf13-hero-cimmm" src="media/brand/CIM_Model_Management_logo_white.svg" alt="CIM Model Management">
   </div>
+  <div class="tf13-hero-actions">
+    <a class="tf13-btn primary" href="{{ site.tf13_interim_url }}" target="_blank" rel="noopener">Download {{ site.tf13_interim_release }} <small>(Sparx EA · TF13 access)</small></a>
+    <a class="tf13-btn" href="{{ site.tf13_is_url }}" target="_blank" rel="noopener">IEC 61970-301 {{ site.tf13_is_edition }} <small>({{ site.tf13_is_release }} UML)</small></a>
+    <a class="tf13-btn" href="{{ site.tf13_interim_notes | relative_url }}" target="_blank" rel="noopener">Release notes <small>({{ site.tf13_interim_release }} PDF)</small></a>
+    <a class="tf13-btn" href="https://github.com/cimug-org/UCA-TF13-CIM-Comparison-Reports" target="_blank" rel="noopener">GitHub repo</a>
+  </div>
 </div>
-
-\[[GitHub Repo](https://github.com/cimug-org/UCA-TF13-CIM-Comparison-Reports)\]
 
 This site makes available online [cim-compare](https://cim-compare.ucaiug.io/) reports reflecting the ongoing work on the next release of the [Common Information Model](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)). Note that reports are published by the UCA TF13 (UTF13) CIM Model Management Team at the time an internal working release is produced. Interim models are generally not made publicly available to non-participants until the final stable release is published. Therefore, active participation is encouraged.
 

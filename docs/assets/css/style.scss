@@ -19,6 +19,7 @@ $cimmm-hover: #D6E6F5;
 $cimmm-hairline: #C8D2DA;
 $cimmm-frame: #D5DEE5;
 $cimmm-ink: #231F20;
+$cimmm-green: #00A851;
 $cimmm-heading-font: Arial, "Liberation Sans", Helvetica, sans-serif;
 
 // The navy header runs edge to edge, so stop the page scrolling sideways.
@@ -89,6 +90,38 @@ html { overflow-x: hidden; }
 
 .tf13-hero-cimmm { flex: none; height: 46px; }
 
+// ---- header buttons (as jcleancim.ucaiug.io) ------------------------------
+// Green primary = latest interim model; ghost buttons for the rest.
+.tf13-hero-actions {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 0 22px;
+}
+
+.markdown-body a.tf13-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  color: #fff;
+  font: 700 14px/1 $cimmm-heading-font;
+  text-decoration: none;
+
+  &:hover { background: rgba(255, 255, 255, 0.12); }
+
+  &.primary {
+    border-color: $cimmm-green;
+    background: $cimmm-green;
+    &:hover { background: darken($cimmm-green, 6%); }
+  }
+
+  small { font-weight: 400; opacity: 0.85; }
+}
+
 @media (max-width: 600px) {
   .tf13-hero-inner { gap: 12px; min-height: 96px; }
   .tf13-hero-tf { height: 52px; }
@@ -96,6 +129,7 @@ html { overflow-x: hidden; }
   .tf13-hero-kicker { font-size: 10px; }
   .tf13-hero-cimmm { display: none; }
   .tf13-hero-mark { top: -40px; height: 200px; }
+  .markdown-body a.tf13-btn { padding: 7px 12px; font-size: 13px; }
 }
 
 // ---- page text and headings ----------------------------------------------
