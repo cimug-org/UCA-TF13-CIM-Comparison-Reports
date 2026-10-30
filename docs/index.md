@@ -21,7 +21,7 @@ This site publishes UCA TF13's releases of the CIM Grid package (formerly IEC619
 
 For the current International Standard, the site provides the UML model of IEC 61970-301 Ed 7.1 (CIM17v40) and comparison reports between published editions. Each interim release is listed with its release notes and a [cim-compare](https://cim-compare.ucaiug.io/) report of what changed in the UML. The interim models themselves (Sparx EA project files) are available only to TF13 participants, through the UCA TF13 site, until the final stable release is made public, so active participation is encouraged.
 
-Comparison reports were generated with cim-compare 2.0.1.
+Comparison reports were generated with cim-compare 2.3.1.
 
 <div class="tf13-notify">
   <p class="tf13-notify-text"><strong>Get notified of new releases and reports.</strong> On the <a href="https://github.com/cimug-org/UCA-TF13-CIM-Comparison-Reports">GitHub repo</a>, choose <b>Watch&nbsp;▾ › Custom</b>, tick <b>Discussions</b> and click <b>Apply</b>.</p>
