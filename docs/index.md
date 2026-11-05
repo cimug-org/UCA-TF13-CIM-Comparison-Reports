@@ -1,13 +1,13 @@
 <div class="tf13-hero">
   <img class="tf13-hero-mark" src="media/brand/CIMug_mark.svg" alt="">
   <div class="tf13-hero-inner">
-    <img class="tf13-hero-tf" src="media/brand/UCA_TF13_white.svg" alt="UCA TF13">
+    <img class="tf13-hero-tf" src="media/brand/UCA_TF13.svg" alt="UCA TF13">
     <span class="tf13-hero-rule"></span>
     <div class="tf13-hero-text">
       <div class="tf13-hero-kicker">UCA TF13 · Grid package</div>
       <h1 class="tf13-hero-title" id="tf13-cim-releases">TF13 CIM Releases</h1>
     </div>
-    <img class="tf13-hero-cimmm" src="media/brand/CIM_Model_Management_logo_white.svg" alt="CIM Model Management">
+    <img class="tf13-hero-cimmm" src="media/brand/CIM_Model_Management_logo_dark.svg" alt="CIM Model Management">
   </div>
   <div class="tf13-hero-actions">
     <a class="tf13-btn primary" href="{{ site.tf13_interim_url }}" target="_blank" rel="noopener">Download {{ site.tf13_interim_release }} <small>(Sparx EA · TF13 access)</small></a>

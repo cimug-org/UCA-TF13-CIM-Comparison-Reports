@@ -4,7 +4,7 @@
 @import "{{ site.theme }}";
 
 // ---------------------------------------------------------------------------
-// CIM Model Management branding (brand kit / KB v1.3)
+// CIM Model Management branding (brand kit / KB v1.3; light-blue header, KB §11.1)
 //   navy #0A2E57 · brand blue #0058A9 · teal #0097A5 · light teal #7FD3DC
 //   band tint #EEF4F8 · hairline #C8D2DA · frame #D5DEE5 · ink #231F20
 // The header block itself is the first element of index.md (class tf13-hero).
@@ -22,18 +22,20 @@ $cimmm-ink: #231F20;
 $cimmm-green: #00A851;
 $cimmm-heading-font: Arial, "Liberation Sans", Helvetica, sans-serif;
 
-// The navy header runs edge to edge, so stop the page scrolling sideways.
+// The header runs edge to edge, so stop the page scrolling sideways.
 html { overflow-x: hidden; }
 
-// ---- navy header band -----------------------------------------------------
-// Breaks out of Primer's centred content column to the full window width;
-// -32px cancels the column's top margin (Primer's my-5).
+// ---- light-blue header band (option B, as cim-mg.ucaiug.io) --------------
+// The report slides' title band with a hairline below. Breaks out of Primer's
+// centred content column to the full window width; -32px cancels the column's
+// top margin (Primer's my-5).
 .tf13-hero {
   position: relative;
   overflow: hidden;
   margin: -32px calc(50% - 50vw) 24px;
   padding: 0 calc(50vw - 50%);
-  background: $cimmm-navy;
+  background: $cimmm-band;
+  border-bottom: 1px solid $cimmm-hairline;
 }
 
 // Primer forces the first element's top margin to 0 and gives images a white
@@ -41,13 +43,38 @@ html { overflow-x: hidden; }
 .markdown-body > .tf13-hero:first-child { margin-top: -32px !important; }
 .markdown-body .tf13-hero img { background-color: transparent; }
 
-// Faint CIMug mark bleeding off the right edge (as on the deck's cover)
+// Stationary header: it stays at the top while the page scrolls under it
+// (as the cim-compare report header). No JavaScript.
+.markdown-body > .tf13-hero:first-child {
+  position: sticky !important;
+  top: 0;
+  z-index: 5;
+}
+
+// Headings reached from anchor links land below the header, not under it.
+html { scroll-padding-top: 216px; }
+
+// A soft shadow fades in once the page scrolls, where the browser supports
+// scroll-driven animations; elsewhere the hairline alone marks the edge.
+@supports (animation-timeline: scroll()) {
+  @keyframes tf13-lift {
+    from { filter: drop-shadow(0 0 0 rgba(10, 46, 87, 0)); }
+    to   { filter: drop-shadow(0 2px 6px rgba(10, 46, 87, 0.16)); }
+  }
+  .markdown-body > .tf13-hero:first-child {
+    animation: tf13-lift linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 40px;
+  }
+}
+
+// Faint CIMug mark bleeding off the right edge (6% on a light background)
 .tf13-hero-mark {
   position: absolute;
   top: -70px;
   right: calc(50% - 50vw - 110px);
   height: 300px;
-  opacity: 0.13;
+  opacity: 0.06;
   pointer-events: none;
 }
 
@@ -67,14 +94,14 @@ html { overflow-x: hidden; }
   align-self: stretch;
   width: 1px;
   margin: 14px 0;
-  background: rgba(255, 255, 255, 0.28);
+  background: $cimmm-hairline;
 }
 
 .tf13-hero-text { flex: 1; min-width: 0; }
 
 .tf13-hero-kicker {
   margin-bottom: 6px;
-  color: $cimmm-teal-light;
+  color: $cimmm-teal;
   font: 700 12px/1.2 $cimmm-heading-font;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -84,14 +111,14 @@ html { overflow-x: hidden; }
   margin: 0;
   padding: 0;
   border: 0;
-  color: #fff;
+  color: $cimmm-navy;
   font: 700 30px/1.15 $cimmm-heading-font;
 }
 
 .tf13-hero-cimmm { flex: none; height: 46px; }
 
 // ---- header buttons (as jcleancim.ucaiug.io) ------------------------------
-// Green primary = latest interim model; ghost buttons for the rest.
+// Green primary = latest interim model; white outline buttons for the rest.
 .tf13-hero-actions {
   position: relative;
   display: flex;
@@ -105,21 +132,24 @@ html { overflow-x: hidden; }
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
-  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  border: 1.5px solid $cimmm-blue;
   border-radius: 999px;
-  color: #fff;
+  background: #fff;
+  color: $cimmm-navy;
   font: 700 14px/1 $cimmm-heading-font;
   text-decoration: none;
 
-  &:hover { background: rgba(255, 255, 255, 0.12); }
+  &:hover { background: $cimmm-hover; }
+
+  small { font-weight: 400; color: #5B6770; }
 
   &.primary {
     border-color: $cimmm-green;
     background: $cimmm-green;
+    color: #fff;
     &:hover { background: darken($cimmm-green, 6%); }
+    small { color: #fff; opacity: 0.85; }
   }
-
-  small { font-weight: 400; opacity: 0.85; }
 }
 
 @media (max-width: 600px) {
@@ -129,6 +159,7 @@ html { overflow-x: hidden; }
   .tf13-hero-kicker { font-size: 10px; }
   .tf13-hero-cimmm { display: none; }
   .tf13-hero-mark { top: -40px; height: 200px; }
+  html { scroll-padding-top: 256px; }
   .markdown-body a.tf13-btn { padding: 7px 12px; font-size: 13px; }
 }
 
