@@ -25,6 +25,18 @@ $cimmm-heading-font: Arial, "Liberation Sans", Helvetica, sans-serif;
 // The header runs edge to edge, so stop the page scrolling sideways.
 html { overflow-x: hidden; }
 
+// Wider page column: 1200 px instead of Primer's 1012 px, so the header's
+// buttons stay on one line on a desktop screen and table dates don't wrap.
+// Narrower windows and phones are unchanged (the buttons wrap as before).
+.container-lg { max-width: 1200px; }
+
+// On a desktop-width window (1200 px and up) the four header buttons stay on
+// one line; below that they wrap, as on phones.
+@media (min-width: 1200px) {
+  .tf13-hero-actions { flex-wrap: nowrap; }
+  .markdown-body a.tf13-btn { white-space: nowrap; }
+}
+
 // ---- light-blue header band (option B, as cim-mg.ucaiug.io) --------------
 // The report slides' title band with a hairline below. Breaks out of Primer's
 // centred content column to the full window width; -32px cancels the column's
