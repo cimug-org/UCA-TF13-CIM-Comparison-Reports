@@ -17,7 +17,7 @@
   </div>
 </div>
 
-This site publishes UCA TF13's releases of the CIM Grid package (formerly IEC61970). It includes the release that corresponds to the current International Standard as well as the interim releases of work in progress toward CIM18. The final stable release of CIM18 will be the basis for the next editions of the IEC 61970-3xx and IEC 61970-4xx series of standards.
+This site publishes UCA TF13's releases of the CIM Grid package (formerly IEC61970). It includes the release that corresponds to the current International Standard as well as the interim releases of work in progress toward Grid18. The final stable release of Grid18 will be the basis for the next editions of the IEC 61970-3xx and IEC 61970-4xx series of standards.
 
 For the current International Standard, the site provides the UML model of IEC 61970-301 Ed 7.1 (CIM17v40) and comparison reports between published editions. Each interim release is listed with its release notes and a [cim-compare](https://cim-compare.ucaiug.io/) report of what changed in the UML. The interim models themselves (Sparx EA project files) are available only to TF13 participants, through the UCA TF13 site, until the final stable release is made public, so active participation is encouraged.
 
@@ -46,13 +46,13 @@ Comparison reports were generated with cim-compare 2.3.1.
 -----------------|:----------------:|:--------------:|:-----------------:|:------------|:----------------- 
 [IEC61970-301:2022](https://webstore.iec.ch/en/publication/74467){:target="_blank"} | 22-Feb-2022 | CIM16v33c | CIM17v40 | [CIM16v33c > CIM17v40](https://utf13-releases.ucaiug.io/16v33c-17v40/comparison-report.html){:target="_blank"} | Comparison report of the UML differences between Ed 6.0 (i.e. CIM16v33) and Ed 7.1 (i.e. CIM17v40) of IEC 61970-301.
 
-## Latest CIM18 Interim Release: All Changes Since CIM17v40
+## Latest Grid18 Interim Release: All Changes Since CIM17v40
 
  Model Release Date | Release Version | Baseline Model Compared | Destination Model Compared | Comparison Report | Release Notes
 :------------------:|:---------------:|:----------------------:|:--------------------------:|:----------- |:-------------
 29-Apr-2026 | Grid18v16 | CIM17v40 | Grid18v16 | [CIM17v40 > Grid18v16](https://utf13-releases.ucaiug.io/17v40-18v16/comparison-report.html){:target="_blank"} | [CIM18v16_ReleaseNotes.pdf](https://utf13-releases.ucaiug.io/17v40-18v16/CIM18v16_ReleaseNotes.pdf){:target="_blank"}
 
-## CIM18 Interim Releases
+## Grid18 Interim Releases
 
  Model Release Date | Release Version | Baseline Model Compared | Destination Model Compared | Comparison Report | Release Notes
 :------------------:|:---------------:|:----------------------:|:--------------------------:|:----------- |:-------------
