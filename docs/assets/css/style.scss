@@ -202,8 +202,7 @@ html { scroll-padding-top: 216px; }
 
 // ---- tables (brand-blue header, banded rows, as in the deck) --------------
 .markdown-body table {
-  width: max-content;
-  max-width: 100%;
+  width: 100%;
   border: 1px solid $cimmm-frame;
   border-radius: 4px;
   border-collapse: separate;
@@ -235,6 +234,19 @@ html { scroll-padding-top: 216px; }
 
   // keep "CIM18v15 > CIM18v16" style links on one line
   td a { white-space: nowrap; }
+}
+
+// Desktop: every table spans the full page column, so all tables line up
+// and the column titles have room for one line. Narrower windows and phones
+// keep Primer's scrollable block table.
+@media (min-width: 1012px) {
+  .markdown-body table { display: table; }
+}
+
+// Wide screens (1200 px and up): column titles stay on one line; the cells
+// below them wrap only if they must.
+@media (min-width: 1200px) {
+  .markdown-body table th { white-space: nowrap; }
 }
 
 // ---- "Get notified" note (note style: tint + teal edge) -------------------
