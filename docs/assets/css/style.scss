@@ -234,6 +234,10 @@ html { scroll-padding-top: 216px; }
 
   // keep "CIM18v15 > CIM18v16" style links on one line
   td a { white-space: nowrap; }
+
+  // Center the last column's title (Comments, Release Notes); the Markdown
+  // left-alignment still applies to its cells.
+  th:last-child { text-align: center !important; }
 }
 
 // Desktop: every table spans the full page column, so all tables line up
