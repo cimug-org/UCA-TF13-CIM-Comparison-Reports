@@ -46,7 +46,7 @@ Comparison reports were generated with cim-compare 2.3.1.
 -----------------|:----------------:|:--------------:|:-----------------:|:------------|:----------------- 
 [IEC61970-301:2022](https://webstore.iec.ch/en/publication/74467){:target="_blank"} | 22-Feb-2022 | CIM16v33c | CIM17v40 | [CIM16v33c > CIM17v40](https://utf13-releases.ucaiug.io/16v33c-17v40/comparison-report.html){:target="_blank"} | Comparison report of the UML differences between Ed 6.0 (i.e. CIM16v33) and Ed 7.1 (i.e. CIM17v40) of IEC 61970-301.
 
-## Latest CIM18 Interim Release: All Changes Since CIM17
+## Latest CIM18 Interim Release: All Changes Since CIM17v40
 
  Model Release Date | Release Version | Baseline Model Compared | Destination Model Compared | Comparison Report | Release Notes
 :------------------:|:---------------:|:----------------------:|:--------------------------:|:----------- |:-------------
