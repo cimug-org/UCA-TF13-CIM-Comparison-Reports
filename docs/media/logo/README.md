@@ -10,4 +10,4 @@ The logo is the UCA TF13 logo next to "CIM Releases" and the CIM Model Managemen
 | `favicon.ico` | Browser icon (16, 32 and 48 px); the same file is at `docs/favicon.ico` |
 | `tf13-reports-social-1280x640.png` | GitHub social preview (upload under Settings › Social preview) |
 
-"CIM Releases" is set in Arial Bold (rendered with the metric-identical Liberation Sans Bold) and converted to outlines, so the SVGs need no fonts. The website's navy header is built in HTML and CSS from the logos in `../brand/`; see `docs/index.md` and `docs/assets/css/style.scss`.
+"CIM Releases" is set in Arial Bold (rendered with the metric-identical Liberation Sans Bold) and converted to outlines, so the SVGs need no fonts. The website's light-blue header is built in HTML and CSS from the logos in `../brand/`; see `docs/index.md` and `docs/assets/css/style.scss`.
