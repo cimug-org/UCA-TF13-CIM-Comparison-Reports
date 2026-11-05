@@ -25,6 +25,18 @@ $cimmm-heading-font: Arial, "Liberation Sans", Helvetica, sans-serif;
 // The header runs edge to edge, so stop the page scrolling sideways.
 html { overflow-x: hidden; }
 
+// Wider page column: 1200 px instead of Primer's 1012 px, so the header's
+// buttons stay on one line on a desktop screen and table dates don't wrap.
+// Narrower windows and phones are unchanged (the buttons wrap as before).
+.container-lg { max-width: 1200px; }
+
+// On a desktop-width window (1200 px and up) the four header buttons stay on
+// one line; below that they wrap, as on phones.
+@media (min-width: 1200px) {
+  .tf13-hero-actions { flex-wrap: nowrap; }
+  .markdown-body a.tf13-btn { white-space: nowrap; }
+}
+
 // ---- light-blue header band (option B, as cim-mg.ucaiug.io) --------------
 // The report slides' title band with a hairline below. Breaks out of Primer's
 // centred content column to the full window width; -32px cancels the column's
@@ -190,8 +202,7 @@ html { scroll-padding-top: 216px; }
 
 // ---- tables (brand-blue header, banded rows, as in the deck) --------------
 .markdown-body table {
-  width: max-content;
-  max-width: 100%;
+  width: 100%;
   border: 1px solid $cimmm-frame;
   border-radius: 4px;
   border-collapse: separate;
@@ -223,6 +234,19 @@ html { scroll-padding-top: 216px; }
 
   // keep "CIM18v15 > CIM18v16" style links on one line
   td a { white-space: nowrap; }
+}
+
+// Desktop: every table spans the full page column, so all tables line up
+// and the column titles have room for one line. Narrower windows and phones
+// keep Primer's scrollable block table.
+@media (min-width: 1012px) {
+  .markdown-body table { display: table; }
+}
+
+// Wide screens (1200 px and up): column titles stay on one line; the cells
+// below them wrap only if they must.
+@media (min-width: 1200px) {
+  .markdown-body table th { white-space: nowrap; }
 }
 
 // ---- "Get notified" note (note style: tint + teal edge) -------------------
